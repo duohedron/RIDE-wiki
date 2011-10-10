@@ -1,0 +1,105 @@
+=========================
+Installation Instructions
+=========================
+
+.. contents::
+  :local:
+
+Preconditions
+=============
+
+Python
+------
+
+RIDE runs only on the regular Python, not on Jython or Iron Python. Python 2.5 is the minimum version. Notice that similarly as Robot Framework, RIDE does not yet support Python 3.
+
+Most other operating systems other than Windows have a recent enough Python installed by default. You can get Windows installers and plenty of other information from http://python.org. In OSX RIDE needs 32-bit Python.
+
+wxPython
+--------
+
+RIDE's GUI is implemented using wxPython toolkit. Version 2.8.6 or newer with *Unicode support* is required. The ANSI version is not supported.
+
+In Ubuntu/GNOME recommended wxPython version is 2.8.10.0 or newer.
+
+In Windows 7 recommended wxPython version is 2.8.11.0 or newer.
+
+For more information, installation instructions, and download packages see http://wxpython.org. On Linux you should be able to install wxPython with your package manager (e.g. on Ubuntu with `sudo apt-get install python-wxgtk2.8`). On the latest OS X versions you should have suitable wxPython version automatically, but unfortunately all RIDE features `don't yet work`__ on that platform.
+
+Robot Framework
+---------------
+
+If RIDE is used only to edit test cases, Robot Framework does not need to
+installed at all. However, the [[Test runner plugin]] requires Robot Framework
+to be separately installed.
+
+Installation
+============
+
+RIDE is distributed as separate installation packages for Windows and for other platforms, and these packages can be found from the `download page`__.
+
+Installing from source
+----------------------
+
+ # Get the source distribution.
+ # Extract it e.g. with command `tar xzvf robotide-<version>.tar.gz`.
+ # Go to the created directory and run `python setup.py install`. Notice that you need to use `sudo python setup.py install` to install to everyone.
+
+Using Windows installer
+-----------------------
+
+ # Get Windows installer
+ # Double click the installer and click through the opened GUI.
+
+Using `easy_install`
+--------------------
+
+RIDE can also be installed with pip/easy_install:
+
+::
+
+      [pip|easy_install] robotframework-ride
+
+This installation approach works on all operating systems but requires you to have  `setuptools`__ installed. Notice that you may need to prefix the command with `sudo` on unixy machines.
+
+Start-up
+========
+
+After a successful installation RIDE can be started from the command line with command:
+
+::
+
+       ride.py [inpath]
+
+
+
+On Windows this requires having `<PythonInstallationDir>\Scripts` on PATH. If `pybot` and `jybot` commands work you should be fine, otherwise see `instructions`__.
+
+
+*Note:*
+
+  The ride.py file will contain an incorrect shebang line in Windows.
+  This will have effect only if you are trying to start RIDE in Windows from Cygwin.
+  In that case, you will need to edit `ride.py` manually and insert path to correct Python.
+
+
+Running RIDE from git clone
+===========================
+
+`Git`__ and `Paver`__ need to be installed.
+
+::
+
+    git clone https://github.com/robotframework/RIDE.git
+    cd RIDE
+    paver run [datasource]
+
+
+To update your clone, run `git pull`
+
+__ http://code.google.com/p/robotframework-ride/issues/list?q=label:OS-OSX
+__ https://github.com/robotframework/RIDE/downloads
+__ http://pypi.python.org/pypi/setuptools
+__ http://code.google.com/p/robotframework/wiki/Installation#Using_Windows_installer
+__ http://git-scm.com/
+__ https://github.com/paver/paver

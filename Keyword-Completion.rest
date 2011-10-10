@@ -1,5 +1,5 @@
 Keyword Completion
-==================
+''''''''''''''''''
 
 .. contents::
   :local:

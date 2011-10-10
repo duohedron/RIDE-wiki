@@ -1,0 +1,83 @@
+=========
+Templates
+=========
+
+Introduction
+============
+
+Custom test data templates are designed to solve two problems:
+
+  * Allow different styles for the created HTML-files
+  * Preserve content outside of test data tables when file is modified with RIDE
+
+
+Defining templates
+==================
+
+Here is an example template:
+
+::
+
+    <html>
+    <head>
+    <meta name="rf-template" content="True" />
+    <!-- CONTENT -->
+    </head>
+    <body>
+    <!-- CONTENT -->
+    <table id="settings" border="1">
+    </table>
+    <!-- CONTENT -->
+    <table id="variables" border="1">
+    </table>
+    <!-- CONTENT -->
+    <table id="testcases" border="1">
+    </table>
+    <!-- CONTENT -->
+    <table id="keywords" border="1">
+    </table>
+    <!-- CONTENT -->
+    </body>
+    </html>
+
+
+`<!-- CONTENT -->` designates any content outside the test data tables, and every such section is written as they were when the file is saved.
+
+Using templates
+===============
+
+RIDE default template
+---------------------
+
+If not told otherwise, RIDE will use it's own default template for saving files.
+This template is included in the source code, in file `src/robotide/writer/htmltemplate.py`.
+
+User defined default template
+-----------------------------
+
+There is also a possibility to use [Settings] for defining a default template, the setting name is `default template`.
+This setting must be an absolute path to a valid, existing template file.
+
+Using file as its own template
+------------------------------
+
+Any test case file can be modified to be its own template.
+This is useful in cases, where there are existing files with content outside the tables that needs to be preserved.
+To make any file a template, following line must be added inside `head` -tag in the HTML source:
+::
+
+    	<meta name="rf-template" content="True" />
+
+Additionally, the tables that contain Robot Framework test data must be given ids, like this:
+::
+
+    <table id="settings">
+    </table>
+    <table id="variables">
+    </table>
+    <table id="testcases">
+    </table>
+    <table id="keywords">
+
+
+The tables may have additional attributes, but the ids are necessary for the file to be recognised as a template.

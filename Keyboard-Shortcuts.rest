@@ -1,0 +1,63 @@
+==================
+Keyboard Shortcuts
+==================
+
+
+============  ===========================
+*Shortcut*    *What it does*
+============  ===========================
+Ctrl+S        Save
+Ctrl+Shift+S  Save all
+Ctrl+O        Open
+Ctrl+Shift+O  Open directory
+Ctrl+R        Open resource
+Ctrl+N        New project
+Ctrl+Shift+N  New resource
+Ctrl+Q        Quit RIDE
+Alt+X         Go Forward
+Alt+Z         Go Back
+F6            Open preview
+F5            Open search keywords dialog
+F8            Run test suite
+Ctrl+F8       Stop running test suite
+============  ===========================
+
+Grid
+----
+
+============  ========================================
+*Shortcut*    *What it does*
+============  ========================================
+Ctrl+Space    Suggestions and auto completion
+Ctrl+I        Insert row(s)
+Ctrl+D        Delete row(s)
+Ctrl+Z        Undo
+Ctrl+Y        Redo
+Ctrl+3        Comment row(s)
+Ctrl+4        Uncomment row(s)
+Alt+Up        Move row(s) up
+Alt+Down      Move row(s) down
+Ctrl+A        Select all
+Ctrl+X        Cut (does not remove cells or rows)
+Ctrl+C        Copy
+Ctrl+V        Paste (does not move cells or rows)
+Ctrl+Shift+V  Insert (adds empty rows and pastes data)
+Delete        Delete
+============  ========================================
+
+Tree view
+---------
+
+============  =====================================
+*Shortcut*    *What it does*
+============  =====================================
+Ctrl+Shift+T  Add new test case
+Ctrl+Shift+K  Add new keyword
+Ctrl+Shift+V  Add new scalar variable
+Ctrl+Shift+L  Add new list variable
+F2            Rename
+Ctrl+Shift+C  Clone/Copy selected keyword/test case
+Ctrl+Up       Move item up
+Ctrl+Down     Move item down
+============  =====================================
+

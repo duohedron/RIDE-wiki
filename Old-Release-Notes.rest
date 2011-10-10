@@ -1,0 +1,1122 @@
+=================
+Old Release Notes
+=================
+
+.. contents::
+  :local:
+  :depth: 1
+
+Latest installers are always available in the
+`download page`__.
+
+RIDE 0.39
+=========
+
+RIDE 0.39 has a number of highlights, which include:
+  * Possibility to rename and delete test case files
+  * Possibility to rename and delete resource files, and also modify corresponding import settings
+  * Changing resource file format automatically updates corresponding import settings
+  * All files importing given resource file can be searched
+  * PYTHONPATH can be configured via settings file
+  * A number of OSX compatibility issues are fixed
+
+Big thanks to John Gluck for sending patches to fix all the now closed OSX issues.
+
+RIDE 0.39 was released on Tuesday, 27th of September.
+
+Full list of resolved issues:
+
+=========  =============  ==========  ===========================================================================
+*ID*       *Type*         *Priority*  *Summary*
+=========  =============  ==========  ===========================================================================
+Issue 146  Defect         High        Keyword completion and documentation popups don't work on OSX
+Issue 856  Enhancement    High        Setting PYTHONPATH in RIDE
+Issue 265  Enhancement    Medium      Changing resource file format should also update resource imports
+Issue 298  Enhancement    Medium      Possibility to rename test case files
+Issue 299  Enhancement    Medium      Possibility to delete test case files
+Issue 618  Enhancement    Medium      I want to search where my Resources are used
+Issue 644  Enhancement    Medium      Possibility to rename resource files
+Issue 855  Enhancement    Medium      Cases In Run tab should not be expanded as default
+Issue 863  Enhancement    Medium      Possibility to delete resource files
+Issue 165  Defect         Medium      The confirm exit -dialog is not closed when RIDE exists on OSX
+Issue 444  Defect         Medium      Manage Run Configuration screen can not be closed or dismissed on OSX
+Issue 503  Defect         Medium      Events are launched several times on new Macs
+Issue 858  Defect         Medium      Documentation popup appears when pointer is outside RIDE window
+Issue 502  Documentation  Medium      Document that on 64bit OSX, RIDE will not start unless 32bit Python is used
+=========  =============  ==========  ===========================================================================
+
+Altogether 14 issues.
+
+
+RIDE 0.38
+=========
+
+This release focuses on improving content assistant. Now content assistant will also show local variables and long names of keywords.
+Also some defects have been fixed and some performance optimizations have been made.
+
+RIDE 0.38 was released on Thursday, 1st of September.
+
+=========  ===========  ==========  ========================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ========================================================================
+Issue 737  Defect       High        Delete rows causes traceback
+Issue 851  Defect       High        Content Assitant: Perfomance issues when huge number of variables
+Issue 84   Enhancement  High        Keyword completion should support long names
+Issue 849  Enhancement  High        Program icon
+Issue 641  Defect       Medium      Arrowing through keyword completion available makes annoying system beep
+Issue 764  Defect       Medium      Model is broken after 2 for-loop move operation
+Issue 832  Defect       Medium      Rename Keyword doesn't rename from GWT steps
+Issue 848  Enhancement  Medium      Local variables to suggestions
+=========  ===========  ==========  ========================================================================
+
+Altogether 8 issues.
+
+
+RIDE 0.37
+=========
+
+The one big enhancement in RIDE 0.37 is that resource files are shown in the same
+hierarchy as the test suites. Only resource files whose path is outside of the suite hierarchy
+are shown in a separate 'External Resource' node. In addition, the two bugs listed below were fixed.
+
+RIDE 0.37 was released on Thursday, 18th of August.
+
+=========  ===========  ==========  ==============================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ==============================================================================
+Issue 476  Enhancement  High        Resources in the RIDE tree should be grouped or hierarchical
+Issue 717  Defect       Medium      When I use RIDE to open __init__.html, it always report "invalid syntax" error
+Issue 823  Defect       Medium      Starting RIDE fails with bad error message when settings.cfg is read-only
+=========  ===========  ==========  ==============================================================================
+
+Altogether 3 issues.
+
+
+RIDE 0.36
+=========
+
+RIDE 0.36 adds support for the keyword teardown introduced in Robot Framework
+2.6. Installation has been made easier by bundling Robot Framework with RIDE
+and by adding more descriptive error messages from missing wxPython
+installation. Included are also a few other minor bug fixes and enhancements.
+It was released on 8th of August 2011.
+
+
+=========  ===========  ==========  ====================================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ====================================================================================================
+Issue 831  Enhancement  Critical    Support for RF 2.6 Keyword Teardown
+Issue 792  Defect       High        Renaming from grid fails when differing case
+Issue 729  Enhancement  High        Bundle Robot Framework with RIDE to ease handling dependencies
+Issue 789  Defect       Medium      Variable rename when new normalized name is the same as the original fails
+Issue 790  Defect       Medium      Add keyword from tree when suite is collapsed produces traceback
+Issue 791  Defect       Medium      Cell values, keyword names, and test names with two spaces break in txt format
+Issue 797  Defect       Medium      Undoing while editing grid undoes operations before edit
+Issue 813  Defect       Medium      RIDE run tab doesn't respect the --outputdir option.
+Issue 815  Defect       Medium      resources listed twice due to case sensitive path
+Issue 817  Defect       Medium      Test case copied with RIDE loses default tags
+Issue 818  Defect       Medium      Problem while renaming(Adding or deleting underscore in test case name)
+Issue 826  Defect       Medium      Test runner plugin doesn't handler non-ASCII characters in test case names
+Issue 478  Enhancement  Medium      RIDE should allow inserting rows instead of overwriting existing ones when doing the paste action.
+Issue 796  Enhancement  Medium      Create keyword should ignore BDD prefixes
+Issue 834  Enhancement  Medium      A human readable error message when wx is not installed
+Issue 785  Enhancement  Low         Show the filename in window title
+Issue 835  Enhancement  Low         Leaving setting editor empty should remove the setting instead of complaining about empty value
+Issue 836  Enhancement  Low         Selecting item from tree should change to edit tab unless is has some effect in the current tab
+Issue 838  Enhancement  Low         Keyboard shortcuts for New Test Case, Keyword, Copy, Insert/Delete Row, Add Scalar and List Variable
+=========  ===========  ==========  ====================================================================================================
+
+Altogether 19 issues.
+
+
+RIDE 0.35
+=========
+
+RIDE 0.35 is mainly a bug fix release. It was released on 13th of April 2011.
+
+Unfortunately RIDE 0.35 had a critical bug related to editing variables (issue 793). As a result RIDE 0.35.1 fixing this bug was released on 14th of April.
+
+=========  ===========  ==========  =====================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  =====================================================================================
+Issue 787  Defect       High        Multiple tags copy
+Issue 723  Defect       Medium      Ampersands (&) are not shown in wx.StaticText components
+Issue 765  Defect       Medium      Cancel of saving directory file reports directory as saved
+Issue 771  Defect       Medium      Undo does not work after saving if data contains empty lines
+Issue 773  Defect       Medium      Keyword completion: Global variable shadows keyword argument
+Issue 775  Defect       Medium      Format change does not change source in file editor
+Issue 782  Defect       Medium      Comment and Uncomment from row header's context menu does not work on Linux
+Issue 783  Defect       Medium      `AttributeError: 'MacRidePopupWindow' object has no attribute 'screen_position'`
+Issue 777  Enhancement  Medium      Possibility to edit variable names from tree
+Issue 784  Enhancement  Medium      When editing import, variable or metadata, selection is lost
+Issue 611  Defect       Low         Search plug-in (F3) does not immediately enable the "Search" button
+Issue 686  Defect       Low         Last item cannot be removed from Manage Run Configurations
+Issue 696  Defect       Low         End of suite's title and/or source are not visible
+Issue 774  Defect       Low         Search keyword dialog goes behind RIDE main window when find usages button is pressed
+Issue 788  Defect       Low         Syntax highlight does not recognize keywords with underscores in test data
+=========  ===========  ==========  =====================================================================================
+
+Altogether 15 issues.
+
+
+RIDE 0.34
+=========
+
+This release mainly fixes bugs and the only notable enhancements are related to the test runner, for example the possibility to add arguments to test runner plugin (issue 725). We have also focused on usability bug fixes and improvements. Especially noteworthy are fixes related to grid editing like issue 734 and issue 762.
+
+RIDE 0.34 was released on Thursday 31th of March 2011.
+
+=========  ===========  ==========  =================================================================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  =================================================================================================================================
+Issue 733  Defect       High        Find Usages highlighting failure
+Issue 734  Defect       High        Row controls do not work from grid editor
+Issue 746  Defect       High        Settings button messes with the GUI layout and display
+Issue 753  Defect       High        Does not find library defined as relative path
+Issue 725  Enhancement  High        Possibility to add arguments to Test Runner plugin
+Issue 728  Enhancement  High        Remember whether settings are open or hidden
+Issue 768  Enhancement  High        Report/log links from run plugin do not work when generating them is disabled during execution and rebot is used to generate them
+Issue 199  Defect       Medium      Delete button does not work in table cells
+Issue 655  Defect       Medium      moving rows up and down beyond screen scroll limit does not work
+Issue 730  Defect       Medium      New tag editing feature doesn't work well on MacOSX
+Issue 732  Defect       Medium      Ride 0.33 variable move-up move-down will lose focus
+Issue 740  Defect       Medium      Popup shown over setup/teardown setting is not always closed
+Issue 741  Defect       Medium      Focus follows mouse pointer in settings
+Issue 745  Defect       Medium      Test Runner plugin settings are shared between execution profiles
+Issue 752  Defect       Medium      Copying from detached popup is not always possible
+Issue 756  Defect       Medium      Tree hangs after keyword renaming
+Issue 760  Defect       Medium      Copy Keyword dialog incorrectly shows that arguments can be changed
+Issue 762  Defect       Medium      Visible row and cell selection is inconsistent with actual internal selection.
+Issue 767  Defect       Medium      Pasting to tag pastes also to grid
+Issue 769  Defect       Medium      Insert rows when multiple rows are selected adds rows between selected rows
+Issue 770  Defect       Medium      Pasting non-ASCII characters works only if system encoding is UTF-8 (i.e. not on Windows)
+Issue 738  Enhancement  Medium      Find Usages should go first through the current file
+Issue 758  Enhancement  Medium      Right click should select row/cell if it is not already selected
+Issue 660  Defect       Low         Clicking tree when release notes is shown causes traceback
+Issue 763  Defect       Low         Preview print does not support unicode
+Issue 766  Defect       Low         Preview produces stack trace when no data is open
+Issue 772  Defect       Low         Navigating to keywords and testcases in html preview is broken
+=========  ===========  ==========  =================================================================================================================================
+
+Altogether 27 issues.
+
+RIDE 0.33
+=========
+
+The most notable features of RIDE 0.33 are the ability to see all tags of a test case (issue 510) and edit those in place (issue 695). Also ability to use RIDE on small screen was improved by hiding settings and adding possibility to configure list editors size through settings file (issue 669). Killed bugs and other enhancements are listed below.
+
+RIDE 0.33 was released on Tuesday 8th of March 2011.
+
+
+=========  =============  ==========  =======================================================================================================
+*ID*       *Type*         *Priority*  *Summary*
+=========  =============  ==========  =======================================================================================================
+Issue 692  Defect         High        Open Directory dialog losts focus on Windows
+Issue 705  Defect         High        test runner plugin fails on windows if cwd is root (C:\, D:\, etc)
+Issue 718  Defect         High        Added keyword is not shown immediately
+Issue 510  Enhancement    High        Show all tags of a test case
+Issue 669  Defect         Medium      Ride cannot be used on small screen
+Issue 690  Defect         Medium      Tooltip shown above other applications
+Issue 698  Defect         Medium      Removing individually selected lines does not work correctly
+Issue 704  Defect         Medium      A case where delete cells undo fails
+Issue 710  Defect         Medium      Duplicate modification in RIDE 0.32 if multiple keywords have same name
+Issue 715  Defect         Medium      Test Runner causes trace at startup
+Issue 722  Defect         Medium      User keyword and Test case names are not HTML escaped when serialized
+Issue 724  Defect         Medium      Resource flickering during suite open
+Issue 726  Defect         Medium      Importing library with second last argument other than string type fails
+Issue 694  Enhancement    Medium      Individual tag is hard to find from long list of tags
+Issue 695  Enhancement    Medium      Editing tags is hard when there is lot of tags
+Issue 701  Enhancement    Medium      Ability to print test suite at preview
+Issue 708  Enhancement    Medium      make settings iterable
+Issue 691  Documentation  Medium      Embedded images are not loaded when too old wxpython version
+Issue 709  Documentation  Medium      Document with wxPython 2.8.10.1 in Windows 7 Argument, Timeout and Return Value Dialog are opened twice
+Issue 700  Defect         Low         Delete shortcut is not working on Delete Rows
+=========  =============  ==========  =======================================================================================================
+
+Altogether 20 issues.
+
+RIDE 0.32
+=========
+
+The most notable features of RIDE 0.32 are the possibility to [[execute test cases|Test Runner Plugin]] (issue 57) and
+find places where library keywords have been used (issue 647).
+
+Big thanks to Bryan Oakley from Orbitz for contributing the TestRunnerPlugin.
+
+RIDE 0.32 was released on Thursday 27th of January 2011. Notice that original RIDE 0.32 downloads were incomplete and immediately replaced with 0.32.1 versions.
+
+=========  ===========  ==========  ======================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ======================================================================================
+Issue 57   Enhancement  High        Possibility to execute test cases
+Issue 647  Enhancement  High        Find places where library keywords have been used
+Issue 653  Defect       Medium      Importing library with mutable object as argument fails
+Issue 662  Defect       Medium      Testcase Edit button on Setup/Teardown/Tags/Timeout/Template missing on OSX
+Issue 670  Defect       Medium      Escaped empty cells at the end of line are ignored and lost if file is saved
+Issue 673  Defect       Medium      Setup/teardown is not highlighted if those have arguments
+Issue 674  Defect       Medium      Undoing extract variable does not remove created variable from tree
+Issue 676  Defect       Medium      New project is not added to recent files
+Issue 677  Defect       Medium      Drag and Drop flickers
+Issue 681  Defect       Medium      Delete doesn't work properly in Manage Run Configuration
+Issue 615  Enhancement  Medium      It should be possible to add variables via tree context menu
+Issue 652  Enhancement  Medium      Unix-style line endings in windows
+Issue 665  Enhancement  Medium      Find Usages dialog should have way to go back to the keyword in question
+Issue 672  Enhancement  Medium      Renaming might take long time and jam the RIDE
+Issue 679  Enhancement  Medium      Allow disabling and enabling menu items, toolbar buttons and shortcuts from plugin API
+=========  ===========  ==========  ======================================================================================
+
+Altogether 15 issues.
+
+RIDE 0.31 -- The Christmas Edition
+==================================
+
+With all the great new features and added colors RIDE 0.31 is a perfect Christmas release. The most important new features are [[argument validation|How To]], [[highlighting occurrences in editor|How To]], [[finding where user keyword are used|How To]], and installation using [[easy_install|Installation Instructions]].
+
+All fixes and features are listed below. RIDE 0.31 was released on Thursday 23th of December 2010.
+
+=========  ===========  ==========  ================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ================================================================================
+Issue 15   Enhancement  High        Argument count check for keywords
+Issue 558  Enhancement  High        Find places where user keyword has been used
+Issue 595  Enhancement  High        Highlight occurrences on grid editor
+Issue 649  Enhancement  High        Put RIDE to PyPI to allow installation with `easy_install`
+Issue 612  Defect       Medium      Location of keywords in tree is changed if directory suite is reloaded
+Issue 613  Defect       Medium      Ctrl-s does not save the file after keyword arguments are modified
+Issue 627  Defect       Medium      Edited variables are not correctly updated in the tree
+Issue 628  Defect       Medium      Autocomplete does not show long keyword names fully
+Issue 630  Defect       Medium      Repeated CTRL+Space slows down autocompletion
+Issue 631  Defect       Medium      First click in table selects always cell in row 1, column 1
+Issue 632  Defect       Medium      Setups and teardown links are not updated in suite if imports are changed
+Issue 637  Defect       Medium      Selection is not visible after deleting item on Import/Variable/Metadata editors
+Issue 639  Defect       Medium      Selecting last variable from the tree and deleting it causes an error
+Issue 640  Defect       Medium      Renaming or deleting a test case file inside directory does not work
+Issue 651  Defect       Medium      Resources should be reloaded when opening a new project
+Issue 654  Defect       Medium      Typing $ or @ in the content assist closes it on Windows
+Issue 339  Enhancement  Medium      Show error when importing library fails
+Issue 550  Enhancement  Medium      Embedded arguments in keywords should be supported
+Issue 592  Enhancement  Medium      Show argument name in tooltip when hovering over an argument
+Issue 599  Enhancement  Medium      Documentation popup should be detachable
+Issue 638  Enhancement  Medium      Removing variables should be easier
+Issue 656  Defect       Low         When deleting rows the same row numbers are selected afterwards
+=========  ===========  ==========  ================================================================================
+
+Altogether 22 issues.
+
+RIDE 0.30
+=========
+
+The highlights of RIDE 0.30 are possibility to move variables between suite and
+resource files (issue 268), navigating to resource file from an import setting (issue 596)
+and extract variable functionality (issue 557). In addition,
+there is a number of smaller enhancements and bug fixes included.
+
+Thanks to Bryan Oakley of Orbitz, who provided implementation to issue 606.
+
+RIDE 0.30 was released on Monday 29th of November 2010.
+
+
+=========  ===========  ==========  ==============================================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ==============================================================================================================
+Issue 268  Enhancement  High        Possibility to move variables between suites and resource files
+Issue 557  Enhancement  High        Create variable from value in grid editor
+Issue 596  Enhancement  High        Create link from imported resource to related item in the tree view
+Issue 572  Defect       Medium      Invalid plugin can cause RIDE to crash hard
+Issue 590  Defect       Medium      Test suite file is not reloaded when changed outside the editor
+Issue 591  Defect       Medium      Touching a test suite file crashes the editor
+Issue 594  Defect       Medium      Content assist should choose between left/right of the cell and below/above based on where there is more space
+Issue 600  Defect       Medium      Commenting doesn't work with 0.29.*
+Issue 601  Defect       Medium      Insert Rows does not work correctly with FOR loops
+Issue 602  Defect       Medium      RIDE gets stucked in "File Changed On Disk" -dialog
+Issue 607  Defect       Medium      Cannot modify contents inside a FOR loop in RIDE.
+Issue 609  Defect       Medium      Keyword search shows resource keywords twice
+Issue 532  Enhancement  Medium      It should be possible to move lines up/down in grid
+Issue 552  Enhancement  Medium      Allow selecting tree node based on controller through plugin API
+Issue 569  Enhancement  Medium      Support saving using old metadata format
+Issue 586  Enhancement  Medium      CTRL+Space in cell (without editing) should open suggestions
+Issue 598  Enhancement  Medium      Resource file name in tree should be file name without formatting
+Issue 603  Enhancement  Medium      OpenSuite, OpenResource ans TestCaseAdded messages need the data items in their payload
+Issue 606  Enhancement  Medium      plugin manager should sort list of plugins
+Issue 610  Enhancement  Medium      Load plugins from `contrib` directory automatically.
+Issue 565  Defect       Low         Keyword colorizer does not recognize renamed keyword immediately
+Issue 604  Enhancement  Low         Log system information on startup
+Issue 605  Enhancement  Low         Log should include traceback if an exception occured
+Issue 608  Enhancement  Low         Make txt default format for new files
+=========  ===========  ==========  ==============================================================================================================
+
+Altogether 24 issues.
+
+RIDE 0.29.2
+===========
+
+RIDE 0.29.2 fixes critical performance issue in release 0.29.1. Thanks to Marko Ojala and Thomas Klein for helping to debug the issue.
+
+=========  ===========  ==========  ===========================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ===========================================================================
+Issue 589  Defect       Critical    RIDE 0.29.1 low performance with big data sets
+Issue 588  Defect       Medium      HTML Templates fail to parse encoding if same line contains other settings.
+Issue 527  Enhancement  Medium      Variable completion should show user keyword arguments first in the list
+=========  ===========  ==========  ===========================================================================
+
+Altogether 3 issues.
+
+
+RIDE 0.29.1
+===========
+
+RIDE 0.29.1 fixes number of defects detected in release 0.29. Amongst the most critical ones keyword copying has been fixed (issue 571) and rename is now limited only to keywords with same source (issue 583).
+
+=========  ===========  ==========  ================================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ================================================================================================
+Issue 571  Defect       High        Copy keyword does not clone correctly
+Issue 577  Defect       High        Empty row in test case table stops test execution
+Issue 583  Defect       High        Renaming should have a scope, so that different keywords with same name are not renamed together
+Issue 566  Defect       Medium      Canceling the renaming of keyword/testcase displays error
+Issue 568  Defect       Medium      Delete Button removes the whole content of a cell
+Issue 570  Defect       Medium      Special variables containing string values are not initialized correctly
+Issue 575  Enhancement  Medium      All automatic globabl variables are not available in variable completion
+Issue 585  Enhancement  Medium      Keyword arguments should be first in suggestion list
+=========  ===========  ==========  ================================================================================================
+
+Altogether 8 issues.
+
+RIDE 0.29.1 was released on Monday 8th of November, 2010.
+
+RIDE 0.29
+=========
+
+New features in RIDE 0.29 are keyword renaming (issue 14) and search filtering by source (issue 534). Creating and extracting new keywords is now considerably faster, helping those who work with large test suites (issue 560). This release also fixes an old bug with setting file corruption (issue 272), based on a fix by Martin Taylor.
+
+RIDE 0.29 was released on Monday 1st of November, 2010.
+
+=========  ===========  ==========  =================================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  =================================================================================================
+Issue 272  Defect       High        Settings file can be corrupted making it impossible to start RIDE
+Issue 14   Enhancement  High        Keyword rename
+Issue 560  Enhancement  High        Creating new keywords causes a long pause when editing large suites
+Issue 551  Defect       Medium      When selecting cell from a row that is not completely visible, next row is automatically selected
+Issue 553  Defect       Medium      Editing variable imports with arguments does not work properly
+Issue 554  Defect       Medium      RideOpenSuite is published even loading data fails
+Issue 555  Defect       Medium      Adding Metadata with Ride does not work.
+Issue 556  Defect       Medium      Deleting a test suite from file system inhibits further work in RIDE
+Issue 559  Defect       Medium      Not able to use Pipe '|' in the argument values of setup/Teardown/Tag Editors using Ride 0.28
+Issue 562  Defect       Medium      Content assist does not work with non ascii characters
+Issue 534  Enhancement  Medium      Keyword search should support filtering by source
+Issue 535  Enhancement  Medium      Keyword search should be available through tree context menu
+=========  ===========  ==========  =================================================================================================
+
+Altogether 12 issues.
+
+
+RIDE 0.28
+=========
+
+Highlights of RIDE 0.28 are the possibility to create a new keyword based on a value in a test case or user keyword (issue 13) and
+the possibility to extract a sequence of steps as a new user keyword (issue 250).
+
+RIDE 0.28 was released on Monday 13th of September, 2010.
+
+=========  =============  ==========  ======================================================================================================================
+*ID*       *Type*         *Priority*  *Summary*
+=========  =============  ==========  ======================================================================================================================
+Issue 13   Enhancement    High        Create a new user keyword from value in test case or user keyword editor
+Issue 250  Enhancement    High        Extract keyword refactoring
+Issue 255  Enhancement    High        Internal logging facility
+Issue 526  Enhancement    High        Add support for writing pipe separator in txt file format
+Issue 525  Defect         High        Default Tags not anymore visible in RIDE editor
+Issue 208  Defect         Medium      Selecting with mouse from keyword completion list does not work in Windows
+Issue 266  Defect         Medium      Variable completion should support also user keyword arguments
+Issue 297  Defect         Medium      New Test Case and New User Keyword dialogs have poor initial position
+Issue 480  Defect         Medium      Inplace Templates
+Issue 506  Defect         Medium      Traceback when clicking in the Suite options
+Issue 513  Defect         Medium      Alternative `Ctrl-Alt-Space` shortcut for keyword completion is not visible
+Issue 514  Defect         Medium      Mouse over setting fields steals focus from keyword search
+Issue 515  Defect         Medium      Variables from variable files are not available when parsing resource imports
+Issue 520  Defect         Medium      Colorization of keywords from xml library specs does not work
+Issue 524  Defect         Medium      Executing a run configuration that has no command causes the output tab to be uncloseable
+Issue 528  Defect         Medium      If variable in variable table has unresolvable variables in value, the variable is not added to content asistance list
+Issue 529  Defect         Medium      Variables are shown to be always from current file
+Issue 530  Defect         Medium      Clearing settings does not clear comments
+Issue 546  Defect         Medium      Dialogs are always shown on the primary monitor on Windows
+Issue 549  Defect         Medium      \n in test data is serialized to html with extra newline and space
+Issue 37   Enhancement    Medium      Moving to user keyword definition from keyword search dialog
+Issue 517  Enhancement    Medium      `Create new user keyword` -dialog should allow entering also arguments
+Issue 518  Enhancement    Medium      Shortcuts for moving list control items up and down
+Issue 522  Enhancement    Medium      RIDE should higlight/jump to keywords using the Given/When/And/Then grammar
+Issue 537  Enhancement    Medium      Selecting rows from row number header does not auto-scroll
+Issue 538  Enhancement    Medium      Select all cells in grid
+Issue 544  Enhancement    Medium      Add all builtin variables to variable completion
+Issue 547  Enhancement    Medium      Add `F5` shortcut to `Search Keywords` and `F6` to `Preview`
+Issue 548  Enhancement    Medium      Support all available formats in `Preview`
+Issue 508  Documentation  Medium      Windows installer puts wrong Python path in ride.py
+Issue 354  Defect         Low         Alt-Right and Alt-Left does not work on Linux, replace with Alt-Z, Alt-X
+=========  =============  ==========  ======================================================================================================================
+
+Altogether 31 issues.
+
+RIDE 0.27
+=========
+
+RIDE 0.27 contains a slew of enhancements, usability improvements and bug fixes,
+which are listed in detail in the table below:
+
+=========  =============  ========  =======================================================================================================================
+ID         Type           Priority  Summary
+=========  =============  ========  =======================================================================================================================
+Issue 490  Defect         High      RIDE does not handle circular resource imports
+Issue 295  Defect         Medium    Resource name doesn't accept non-ascii characters
+Issue 418  Defect         Medium    Recent files not updated when format was changed
+Issue 430  Defect         Medium    Preview does not show added user keyword or test immediately
+Issue 434  Defect         Medium    Documentation popup is not destroyed if cursor is outside RIDE window
+Issue 438  Defect         Medium    When a Test Suite references a Remote library that is not present RIDE gets painfully slow
+Issue 440  Defect         Medium    Auto-Completion pop-up is fixed size and can go beyond physical screen boundaries
+Issue 441  Defect         Medium    Use OSX keys instead of CTRL keys for editing
+Issue 443  Defect         Medium    Keyboard shortcuts do not work on Linux when mouse is over cells with help boxes
+Issue 445  Defect         Medium    Uncomment Rows causes empty cell
+Issue 447  Defect         Medium    Using CMD-<arrow keys> doesn't work
+Issue 485  Defect         Medium    Spaces in path of imported files are removed when creating LibrarySpec object thus not finding the file.
+Issue 491  Defect         Medium    Move up or down causing error in console
+Issue 492  Defect         Medium    Grid needs to be recolorized after insert/delete cells
+Issue 495  Defect         Medium    Content in list variable editor cells does not wrap correctly
+Issue 497  Defect         Medium    Copy test does not initialize setup / teardown / etc fields properly
+Issue 500  Defect         Medium    Moving edited items in 'Manage Run Configurations'  loses data
+Issue 501  Defect         Medium    Changes done via 'Manage Run Configurations' are not taken in use if the configuration is rerun from 'Run Again' button
+Issue 280  Enhancement    Medium    Allow navigation to setup/teardown keywords
+Issue 435  Enhancement    Medium    Search keywords should give prefix-match higher priority
+Issue 471  Enhancement    Medium    Controls for documentation and setup/teardown should have informative tooltip
+Issue 472  Enhancement    Medium    It should be possible to configure number of columns in list variable dialog
+Issue 473  Enhancement    Medium    Stretching list variable window should also stretch the table inside it
+Issue 479  Enhancement    Medium    RIDE cell selection behaviour inconsistent for top left cell
+Issue 488  Enhancement    Medium    `${/}` variable does not work
+Issue 489  Enhancement    Medium    Inserting and deleting cells should work on ranges
+Issue 493  Enhancement    Medium    `Insert Cells` and `Delete Cells` menu items to list variable editor
+Issue 499  Documentation  Medium    Document where run configurations are stored
+Issue 259  Defect         Low       Keywords with long keyword names (e.g. `BuiltIn.Log`) are not colorized
+Issue 285  Defect         Low       Inconsistent displaying of the RIDE output files in browser
+Issue 425  Defect         Low       RIDE destroys/recreates editor when you select edit tab
+Issue 486  Defect         Low       When RIDE 0.26 reports collision in scalar and list variable names, the error message is duplicated
+Issue 484  Enhancement    Low       `Insert cell` and `Delete cell` buttons should be moved to context menu and `Add row` and `Add column` buttons removed
+=========  =============  ========  =======================================================================================================================
+
+Altogether 33 issues.
+
+RIDE 0.26.1
+===========
+
+RIDE 0.26.1 fixes a critical bug that could cause RIDE to fail to open files that caused warnings and adds a background color to keyword search based on a patch by Riian Booysen.
+RIDE 0.26.1 was released on Tuesday 2010-07-27.
+
+=========  ======  ==========  =======================================
+*ID*       *Type*  *Priority*  *Summary*
+=========  ======  ==========  =======================================
+Issue 483  Defect  Critical    RIDE 0.26 crashes when reporting errors
+=========  ======  ==========  =======================================
+
+Altogether 1 issues.
+
+RIDE 0.26
+=========
+
+The most important feature in RIDE 0.26 is vastly improved performance. Anyone with performance issues in RIDE should update as soon as possible. Release also contains new "Insert Cell" and "Delete Cell" buttons based on patch contributed by Riaan Booysen, fixes to undo, documentation pretty printing, loading resource files from python path, and some other minor fixes.
+
+RIDE 0.26 was released on Thursday 2010-07-22.
+
+=========  ===========  =====================================================================  =========================================================================
+*ID*       *Type*       *Priority*                                                             *Summary*
+=========  ===========  =====================================================================  =========================================================================
+Issue 451  Defect       High                                                                   undo doesn't always work for row deletion
+Issue 468  Defect       High                                                                   Opening keyword editor in 0.25.1 is very slow, when Colorizer is used
+Issue 475  Defect       High                                                                   The GUI Ride is so low at open the keyword with more 3 line
+Issue 174  Enhancement  High                                                                   Support for comments
+Issue 424  Enhancement  High                                                                   Keyword colorizer has performance issues
+Issue 458  Defect       Medium                                                                 Resource files from subdirectories in python path are not loaded
+Issue 469  Defect       Medium                                                                 Documentations of old test cases and keywords got broken with Ride 0.25.1
+Issue 477  Enhancement  Improve grid usability by adding Insert Cell and Delete Cell buttons.
+=========  ===========  =====================================================================  =========================================================================
+
+Altogether 7 issues.
+
+
+RIDE 0.25.1
+===========
+
+RIDE 0.25.1 fixes bugs listed in the table below and adds initial support for
+editing commments in setting and variable tables.
+
+RIDE 0.25.1 was released on Tuesday 2010-06-30.
+
+=========  ======  ==========  =======================================================================
+*ID*       *Type*  *Priority*  *Summary*
+=========  ======  ==========  =======================================================================
+Issue 462  Defect  High        Built-In variables are not handled properly when resources are resolved
+Issue 464  Defect  Medium      WITH NAME syntax disappears in settings dialog, but is still saved
+Issue 466  Defect  Medium      Children cannot be added to newly created directory
+=========  ======  ==========  =======================================================================
+
+Altogether 3 issues.
+
+RIDE 0.25
+=========
+
+RIDE 0.25 is a compatibility release for Robot Framework 2.5. Due to the large
+internal changes in modules that RIDE uses, this version requires RF 2.5 to
+work. In addition to compatibility support was added for test templates and
+showing and editing of comments in test case and user keywords.
+
+RIDE 0.25 was released on Thursday 2010-06-24.
+
+=========  ===========  ============================================  =========
+*ID*       *Type*       *Priority*                                    *Summary*
+=========  ===========  ============================================  =========
+Issue 459  Enhancement  Compatibility with Robot Framework 2.5
+Issue 460  Enhancement  Support test template/template settings
+Issue 461  Enhancement  Support test case and user keyword comments.
+=========  ===========  ============================================  =========
+
+Altogether 3 issues.
+
+RIDE 0.23
+=========
+
+RIDE 0.23 is mainly released because it adds support for
+`Robot Framework 2.5 alpha 1`__.
+Also a couple of nasty editing bugs have been fixed. This will be last RIDE release
+that supports
+`Robot Framework 2.1 series`__.
+
+RIDE 0.23 was released on Wednesday 2010-05-12.
+
+=========  ===========  ==========  ============================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ============================================================
+Issue 450  Enhancement  High        Compatibility with Robot Framework alpha 1
+Issue 426  Defect       High        Copying part of the cell always copies all the cell contents
+Issue 427  Defect       High        Copy-pasting cell content results in two copies in Linux
+=========  ===========  ==========  ============================================================
+
+Altogether 3 issues.
+
+
+RIDE 0.22.1
+===========
+
+RIDE 0.22.1 Fixes defects listed in the table below that were found in 0.22
+and also introduces a possibility to move test cases and user keywords in the
+tree with keyboard shortcuts.
+
+RIDE 0.22.1 was released on Friday 2010-03-26.
+
+
+=========  ===========  ==========  ========================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ========================================================================
+Issue 419  Defect       Critical    Library imports are messed up
+Issue 422  Defect       High        Copy-pasting multiple rows in a single column results in a single cell
+Issue 405  Enhancement  High        Keyboard shortcuts `Ctrl-Up/Ctrl-Down` for moving tests/keywords up/down
+Issue 421  Defect       Medium      RIDE saves files using Unix line separator on Windows
+=========  ===========  ==========  ========================================================================
+
+Altogether 4 issues.
+
+RIDE 0.22
+=========
+
+Even though originally labeled as bug-fix release, we managed (once again) to
+feature creep. In addition to bug fixes, this release allows [[copying data to and from spreadsheet programs|How To]] (issue 406) and some user interface tweaks.
+
+RIDE 0.22 was released on Wednesday 2010-03-24.
+
+Acknowledgements
+----------------
+
+Thanks to Bryan Oakley of Orbitz for providing code to various issues and to
+user sbruhn of ADVA Optical for a patch to issue 401.
+
+Thanks also to everyone who has submitted issues to our tracker.
+
+Full list of fixes and enhancements
+-----------------------------------
+
+=========  =============  ==========  ===============================================================================================================
+*ID*       *Type*         *Priority*  *Summary*
+=========  =============  ==========  ===============================================================================================================
+Issue 377  Defect         High        Python 2.4 incompatibility
+Issue 406  Enhancement    High        Possibility to copy data between Excel/Open Office and RIDE
+Issue 371  Defect         Medium      Adding keyword or test in an empty resource or test case fails
+Issue 375  Defect         Medium      Commented rows should be colored with with a separate color
+Issue 376  Defect         Medium      All text is not visible in cells
+Issue 384  Defect         Medium      RIDE corrupts files on deleting duplicate variables
+Issue 393  Defect         Medium      Search keywords does not request user defined libraries documentation
+Issue 394  Defect         Medium      RIDE crashes with bad plugins
+Issue 395  Defect         Medium      error: `AttributeError: 'BrokenPlugin' object has no attribute 'enable_on_startup'`
+Issue 398  Defect         Medium      kweditor too agressive in saving to model
+Issue 400  Defect         Medium      RIDE always saves TSV files with DOS (\r\n) line endings
+Issue 402  Defect         Medium      Code completion doesn't work for newly created suite's tests
+Issue 404  Defect         Medium      When the keyword list is opened with ‘crtl-space’, it is not possible to exit without choosing some keyword
+Issue 407  Defect         Medium      Copy/pasting of many cells in list variables doesn’t work properly
+Issue 412  Defect         Medium      Comment Rows on lines within of a FOR loop generates wrong syntax
+Issue 332  Enhancement    Medium      Variable editing dialogs should have focus in variable base name
+Issue 363  Enhancement    Medium      Remove external libraries' spec files
+Issue 387  Enhancement    Medium      Use fixed font for output tab that is opened when running a testcase out of the RIDE
+Issue 396  Enhancement    Medium      plugin API needs generic publish method
+Issue 401  Enhancement    Medium      Sorting by Source should be available in "Search Keywords" dialog
+Issue 389  Documentation  Medium      Core plugins lack appropriate descriptive text
+Issue 343  Defect         Low         Unedited fields makes claims that the saving is needed
+=========  =============  ==========  ===============================================================================================================
+
+Altogether 22 issues.
+
+RIDE 0.21.1
+===========
+
+RIDE 0.21.1 contains the ciritical bug fixes to 0.21 listed below.
+
+Version 0.21 was released on Wednensday, 3rd of February, 2010
+
+=========  ======  ==========  =================================================================================
+*ID*       *Type*  *Priority*  *Summary*
+=========  ======  ==========  =================================================================================
+Issue 367  Defect  Critical    Editing import settings, variables or metadata does not work in RIDE 0.21
+Issue 369  Defect  Critical    Creating new resources does not work in RIDE 0.21
+Issue 370  Defect  Medium      Creating test or user keyword to empty suite shows the created item twice in tree
+=========  ======  ==========  =================================================================================
+
+Altogether 3 issues.
+
+
+RIDE 0.21
+=========
+
+RIDE 0.21 contains a slew of enhancements and bug fixes. One of the most exiting new features is the ability to run commands
+on system, including tests, via run plug-in (issue 253). There are also several improvements to performance (issue 270, issue 276 and issue 357). All resolved issues are listed in the table below.
+
+Version 0.21 was released on Tuesday, 2nd of February, 2010
+
+=========  ===========  ==========  ============================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ============================================================================================
+Issue 270  Defect       High        Search Keywords jams RIDE and Python takes all CPU time with big test data
+Issue 318  Defect       High        Undo problem
+Issue 341  Defect       High        Only first resource import of a resource file is processed
+Issue 253  Enhancement  High        Generic plugin for running any command in the system
+Issue 357  Enhancement  High        Do not create all test/keyword tree nodes when suite is loaded to save memory
+Issue 256  Defect       Medium      Variables in library imports are not resolved
+Issue 276  Defect       Medium      Test case and user keyword copy operation takes very long time to process after 10-15 copies
+Issue 286  Defect       Medium      Changing character's case in test case name causes validation error
+Issue 304  Defect       Medium      error found when opening directory
+Issue 317  Defect       Medium      RIDE crashes if user keyword data contains UserErrorHandlers
+Issue 348  Defect       Medium      Copied test case's or keyword's settings cannot be edited
+Issue 349  Defect       Medium      Keyword is not completed when pressing CTRL-Space in an empty cell
+Issue 356  Defect       Medium      Some data crashes RIDE when editors are created
+Issue 362  Defect       Medium      RIDE crashes when selecting another file from the recent files
+Issue 364  Defect       Medium      Documentation popup should not appear when the window doesn't have focus (Linux)
+Issue 218  Enhancement  Medium      Give access of other available plugins to a plugin that is to be activated
+Issue 266  Enhancement  Medium      Variable completion should support also user keyword arguments
+Issue 281  Enhancement  Medium      Content assist should be extensible
+Issue 322  Enhancement  Medium      Show progress bar when loading test data
+Issue 327  Enhancement  Medium      List variable editor should use grid instead of single input field
+Issue 328  Enhancement  Medium      Collect all test data parsing errors into one dialog
+Issue 333  Enhancement  Medium      Keyword colors
+Issue 351  Enhancement  Medium      `${/}` should be replaced with `/` in import related settings automatically
+Issue 273  Defect       Low         Changing format recursively does not work with directories without __init__ file
+Issue 278  Defect       Low         Resource file name not shown correctly in the left-hand side tree
+Issue 283  Defect       Low         RIDE keyword search result doesn't display html tables correctly
+Issue 284  Defect       Low         Libraries are found from spec files case insensitively in Windows
+Issue 336  Enhancement  Low         'save all' button needed
+=========  ===========  ==========  ============================================================================================
+
+Altogether 28 issues.
+
+RIDE 0.20
+=========
+
+Version 0.20 contains mainly [[Plugin API|Plugin Development]] related enhancements and fixes. In addition to them, a severe memory leak (issue 331) and adding suites to wrong directory (issue 289) were fixed, and some other smaller enhancements and fixes done. The full list of issues is below.
+
+Due to the changes done to the plugin API, plugins' settings changed location in the settings file. Therefore it is recommended to remove the settings file to make it clean and ease the later use. See `here`__ where to find the settings file.
+
+
+Version 0.20 was released on Friday, 4th of December, 2009.
+
+=========  ===========  ==========  =======================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  =======================================================================================
+Issue 254  Enhancement  Critical    Plugin API review and enhancements
+Issue 212  Defect       High        Key bindings (e.g. ctrl-c) are tied to main editor window and cannot be used by plugins
+Issue 289  Defect       High        Adding a new suite saves the file into wrong dir.
+Issue 331  Defect       High        Memory leak when changing editors
+Issue 252  Enhancement  High        Implement default test suite, test case, and keyword editors as plugin
+Issue 296  Enhancement  High        Remove broken unneccessary Save as... functionality
+Issue 207  Defect       Medium      Editors should not have two horizontal scrollbars
+Issue 275  Defect       Medium      Publisher should catch error in message handlers.
+Issue 329  Defect       Medium      Pressing delete key in test case name deletes from test step table
+Issue 240  Enhancement  Medium      It should be possible to deactivate the Preview plugin
+Issue 313  Enhancement  Medium      Context menu to the editor to support copy, paste, etc.
+Issue 287  Defect       Low         Clicking suite name goes to rename mode in Windows
+=========  ===========  ==========  =======================================================================================
+
+Altogether 12 issues.
+
+
+RIDE 0.19
+=========
+
+Version 0.19 contains quite big simplifications to the user interface, which are described in issues 235 and 236.
+Functionality in removed nodes "Test Cases" and "User Keywords" have been moved to context menu in the tree.
+Additionally, some number of bugs have been fixed, of which the most important is the crash during file reload (issue 257)
+
+Version 0.19 was released on Wednesday, 7th of October, 2009.
+
+=========  ===========  ==========  =========================================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  =========================================================================================================
+Issue 257  Defect       Critical    Loading changes from disk when editing a directory crashes RIDE
+Issue 267  Defect       High        Having suites with same name in different sub suites causes problems
+Issue 233  Enhancement  High        Possibility to change test data format
+Issue 235  Enhancement  High        Show variables on the same view as suite/resource settings
+Issue 236  Enhancement  High        Remove test case and user keyword lists and move their functionality to tree context menu
+Issue 142  Defect       Medium      Adding, renaming or deleting an import setting (resource and variable) does not affect keyword completion
+Issue 258  Defect       Medium      Keyword documentation does not work with long keyword names
+Issue 202  Enhancement  Medium      Possibility to open an empty directory or file
+Issue 234  Enhancement  Medium      Init file format should be asked from user instead of defaulting to HTML
+Issue 247  Enhancement  Medium      RIDE should support adding several rows at the same time.
+Issue 249  Enhancement  Medium      Validate arguments set to user keywords
+Issue 182  Defect       Low         Python variable files are not imported from PYTHONPATH
+Issue 126  Enhancement  Low         Test pane has poor resize behavior
+=========  ===========  ==========  =========================================================================================================
+
+Altogether 13 issues.
+
+
+RIDE 0.18
+=========
+
+Version 0.18 contains, as usual, a number of improvements and bug fixes.
+Most important of which these are support for plain text data format (issue 220) introduced in Robot Framework 2.1.1 and better editors for suite, test case and user keyword settings for improved usability (issue 227). Moving test cases and user keywords using drag and drop is also included in this release (issue 9).
+
+Version 0.18 was released on Monday, 21th of September, 2009.
+
+Contributors
+------------
+
+Big thanks to Bryan Oakley at Orbitz Worldwide for multiple contributions, including the test data colorizer (issue 110). Thanks also to to Bulkan Evcimen for a patch to bug in renaming tests and keywords (issue 194), to Jarmo Kortelainen for an enhancement patch to documentation editing (issue 206), and to jrvilda for important pre-release testing.
+
+List of fixes and enhancements
+------------------------------
+
+=========  =============  ==========  =============================================================================================================
+*ID*       *Type*         *Priority*  *Summary*
+=========  =============  ==========  =============================================================================================================
+Issue 209  Defect         High        File cannot be saved when "the file has modified" dialog is shown
+Issue 244  Defect         High        Python 2.4 compatibility
+Issue 9    Enhancement    High        Possibility to move user keywords and test cases using drag-and-drop
+Issue 220  Enhancement    High        Support for writing tests in plain text format
+Issue 227  Enhancement    High        Better setting and variable editors
+Issue 161  Defect         Medium      Cell tooltips don't work right if window is scrolled
+Issue 190  Defect         Medium      Don't show preview tab by default
+Issue 194  Defect         Medium      Editing test case and user keyword names - it should be possible to keep the original name by clicking ok
+Issue 199  Defect         Medium      Delete button does not work in table cells
+Issue 201  Defect         Medium      RIDE should support deleting several rows at the same time.
+Issue 214  Defect         Medium      `\\n` should not be replaced with `\\n<br>` when serialized as HTML
+Issue 219  Defect         Medium      Error when reloading file
+Issue 243  Defect         Medium      Changes to files on disk should be ignored when user is exiting
+Issue 110  Enhancement    Medium      Colorize keywords, arguments, variables, etc. in the editor
+Issue 116  Enhancement    Medium      RIDE should support multi-cell documentation to improve readability
+Issue 128  Enhancement    Medium      Input fields in variable and setting dialogs should grow when the dialog is resized
+Issue 189  Enhancement    Medium      Jump to current test in preview
+Issue 203  Enhancement    Medium      Publish an event when a cell value changes in a grid
+Issue 206  Enhancement    Medium      Enhancements to handing newlines in documentations
+Issue 221  Enhancement    Medium      Possibility to show data also in plain text format in (HTML) Preview plugin
+Issue 226  Enhancement    Medium      Remove `Test Setup`, `Test Teardown`, `Default Tags` and `Test Timeout` settings from test suite init file UI
+Issue 230  Enhancement    Medium      Show source where suites and resource files originate
+Issue 222  Documentation  Medium      Document that RIDE requires Unicode version of wxPython
+Issue 223  Defect         Low         Comment or uncomment does not mark the modified file 'dirty'
+Issue 168  Enhancement    Low         Ensure that RIDE is always on a visible display
+Issue 191  Enhancement    Low         Core plugins should be loaded first
+Issue 192  Enhancement    Low         Only activate plugins after all have been loaded
+Issue 231  Enhancement    Low         Use "RIDE" instead of "Robot IDE" in title and everywhere else in the source code and documentation
+=========  =============  ==========  =============================================================================================================
+
+Altogether 28 issues.
+
+RIDE 0.17
+=========
+
+Version 0.17 was released on Monday, 6th of July, 2009.
+
+This version consists of bug fixes and minor enhancements, with one real
+feature thrown in. It is now possible to use settings file to define a list of
+libraries whose keywords will always be included in keyword completion and
+search. More information about this is available in the wiki. Full list of
+improvements in in the table below:
+
+=========  ===========  ==========  ==============================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ==============================================================================
+Issue 121  Enhancement  High        `auto imports` setting to define a list of libraries that are always available
+Issue 167  Defect       Medium      Cut doesn't work for multiple rows
+Issue 169  Defect       Medium      RIDE cannot handle '=' in variable table
+Issue 171  Defect       Medium      Resource imports should support variables defined in another resource file
+Issue 181  Defect       Medium      RIDE fails to import libraries that are imported using `With Name` -syntax
+Issue 100  Enhancement  Medium      RIDE should have icons for the most important operations
+Issue 112  Enhancement  Medium      Overview of the test suite as HTML
+Issue 155  Enhancement  Medium      Save should only save the current suite
+Issue 176  Enhancement  Medium      Automatic literal newline character sequence when exiting edit window
+Issue 175  Defect       Low         Window scrolling is dodgy after large copy/pastes
+Issue 183  Defect       Low         Commenting rows does not work unless whole rows are selected
+=========  ===========  ==========  ==============================================================================
+
+Altogether 11 issues.
+
+
+RIDE 0.16
+=========
+
+Version 0.16 was release Tuesday, 16th of June, 2009.
+
+This version includes some really exciting new features and improvements.
+The ability to use templates (issue 6) for serialization enables also preserving
+of data outside of tables (issue 106), which has been impossible with previous
+versions of RIDE. The other major improvements are the [[plugin architecture|Plugin Development]]
+(issue 138) and `persistent settings`__ (issue 103).
+
+Additionally, some number of bugs have again been squashed, full details are in
+the table below.
+
+Big thanks goes to Bryan Oakley at `Orbitz`__, who is largely responsible for the
+implementation of the [[plugin architecture|Plugin Development]], and the first automatic plugin to
+show the release notes when a new RIDE version is opened for the first time.
+
+=========  ===========  ==========  ===============================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ===============================================================================================
+Issue 6    Enhancement  High        User defined test data templates
+Issue 33   Enhancement  High        Support for OSX
+Issue 106  Enhancement  High        Possibility to keep original HTML outside of test data tables
+Issue 138  Enhancement  High        Add support for plugins
+Issue 145  Defect       Medium      Can't start ride when both wx2.6 & 2.8 are installed
+Issue 148  Defect       Medium      Showing keyword tooltip also changes the selected cell while it shouldn't
+Issue 150  Defect       Medium      Can't create a new resource through GUI
+Issue 156  Defect       Medium      Save all should not stop on first failure
+Issue 160  Defect       Medium      Multiline test case documentation corrupt TSV file
+Issue 103  Enhancement  Medium      Persistent settings
+Issue 115  Enhancement  Medium      It should be possible to temporarily deactivate rows in a test case or even complete test cases
+Issue 154  Enhancement  Medium      RIDE does not read XML produced by the development version of libdoc
+Issue 162  Enhancement  Medium      Each release should include a copy of the release notes
+Issue 163  Enhancement  Medium      Create a plugin that displays release notes
+Issue 158  Defect       Low         control-space when not editing a cell throws an error
+=========  ===========  ==========  ===============================================================================================
+
+Altogether 15 issues.
+
+
+RIDE 0.15.1
+===========
+
+Version 0.15.1 was released on Wednesday 27th of May, 2009.
+This version fixes a critical problem in saving resource files (issue 143).
+
+
+RIDE 0.15
+=========
+
+Version 0.15 was released on Tuesday 26th of May, 2009.
+
+*NOTE:*
+  _*This release requires Robot Framework 2.1 or newer.*_
+
+The most significant feature of this release is the use of operating system
+clipboard for copy/paste actions (issue 119).  This also means that it is now
+possible to copy/paste items between two RIDE instances (issue 102). Other enhancements and bug fixes are described in the table below.
+
+We want specially thank Bryan Oakley for great patches that significant contributed toward this release.
+
+=========  ===========  ==========  ========================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  ========================================================================================
+Issue 119  Defect       High        Copy/Paste does not use system clipboard
+Issue 132  Defect       High        Keyword search does not work for user keywords
+Issue 102  Enhancement  High        It should be possible to copy test cases and other data between different RIDE instances
+Issue 94   Defect       Medium      Move Add Suite from Tools menu to File menu
+Issue 131  Defect       Medium      MANIFEST.in missing, setup.py references files that are not in MANIFEST
+Issue 136  Defect       Medium      Ride does not serialize anchors for test cases and keywords anymore
+Issue 1    Enhancement  Medium      Newline should be added after "\n" in test data
+Issue 34   Enhancement  Medium      HTML formatting for keyword documentation pop-up
+Issue 134  Enhancement  Medium      Top level documentation in resource files
+Issue 141  Enhancement  Medium      cell editor needs to be multi-line
+=========  ===========  ==========  ========================================================================================
+
+Altogether 10 issues.
+
+
+RIDE 0.14
+=========
+
+Version 0.14 was released 27.4.2009.
+
+The main feature is compatibility with Robot Framework 2.1.
+Bug fixes and improvements included in the release are listed below.
+
+=========  ===========  ==========  =============================================================================================
+*ID*       *Type*       *Priority*  *Summary*
+=========  ===========  ==========  =============================================================================================
+Issue 122  Enhancement  Critical    Robot Framework 2.1 compatibility
+Issue 108  Defect       Critical    Modified resource files are not marked with `*` and not serialized properly
+Issue 99   Defect       High        Variables from imported resource files are not used to resolve variables in following imports
+Issue 113  Defect       Medium      Proper exit behaviour on unsaved changes
+Issue 123  Defect       Medium      "Save As" doesn't work as expected with single files
+Issue 105  Enhancement  Medium      Resource imports should support variables defined in another resource file
+Issue 127  Enhancement  Medium      ride won't save new-but-mostly-empty suite
+=========  ===========  ==========  =============================================================================================
+
+Altogether 7 issues.
+
+
+RIDE 0.13.1
+===========
+
+Version 0.13.1 was released 23.2.2009.
+
+This release fixes the regression and the bug described below.
+
+========  ======  ==========  ==================================================================
+*ID*      *Type*  *Priority*  *Summary*
+========  ======  ==========  ==================================================================
+Issue 96  Defect  Critical    Keyword navigation doesn't work
+Issue 98  Defect  Critical    Variables with variables in their values are not handled correctly
+========  ======  ==========  ==================================================================
+
+
+RIDE 0.13
+=========
+
+Version 0.13 was released 16.2.2009.
+There are some major new features, most important of which are the support for variable name completion and the ability to import libraries with arguments.
+Some bugs have also been squashed.
+
+Backwards incompatible changes
+------------------------------
+
+The old start-script `run.py` has been removed in favor of new `ride.py` script. `ride.py` is automatically installed under the scripts directory
+(%PYTHONDIR%/Scripts ín Windows and /usr/bin in Linux).
+
+========  ===========  ==========  =========================================================================================
+*ID*      *Type*       *Priority*  *Summary*
+========  ===========  ==========  =========================================================================================
+Issue 90  Defect       High        Resource file cannot be used if it is named in camel case like MyResource.html in Windows
+Issue 46  Enhancement  High        Resource, library and variable imports should support variables
+Issue 63  Enhancement  High        Variable name completion
+Issue 64  Enhancement  High        RIDE should remember the directory where files were opened last time
+Issue 69  Enhancement  High        Initialization parameters are not passed to libraries
+Issue 89  Enhancement  High        Start-up scripts
+Issue 81  Defect       Medium      Viewing keyword documentation does not work when using the full name of a keyword
+Issue 85  Defect       Medium      Save As does not work with files
+Issue 91  Defect       Low         Suite, test and keyword documentations are not shown as HTML
+========  ===========  ==========  =========================================================================================
+
+
+RIDE 0.12.3
+===========
+
+Version 0.12.3 was released 27.1.2009, to fix the two critical issues listed below.
+
+========  ======  ==========  =======================================================
+*ID*      *Type*  *Priority*  *Summary*
+========  ======  ==========  =======================================================
+Issue 80  Defect  Critical    New project cannot be created through GUI
+Issue 82  Defect  Critical    RIDE converts 'Variables' imports to 'Resource' imports
+========  ======  ==========  =======================================================
+
+
+RIDE 0.12.1
+===========
+
+There is a bug in 0.12 which prevents the deletion of multiple cells in the grid.
+It is fixed in 0.12.1, otherwise the content is the same as in 0.12
+
+
+RIDE 0.12
+=========
+
+DEPRECATED: Please use 0.12.1 instead
+NOTE: due to heavy internal refactoring, it is recommended that any previous installation is removed before installing 0.12.
+
+Version 0.12 was released 23.1.2009.
+There are two major new features:
+It is now possible to read and write tsv files, as well as create tsv suites and resource files through the GUI.
+The IDE will now warn if there are changes on the disk to a suite that is being edited.
+
+Additionally, the spec files have been updated so that latest keywords from SeleniumLibrary, SSHLibrary and SwingLibrary are included in the distribution.
+
+Here's the list of issues closed in this release:
+
+========  =============  ==========  ==================================================================================================
+*ID*      *Type*         *Priority*  *Summary*
+========  =============  ==========  ==================================================================================================
+Issue 25  Enhancement    High        Notification about new version of edited document
+Issue 50  Enhancement    High        TSV Support
+Issue 65  Enhancement    High        Need to include latest spec files of all our libraries in distributions
+Issue 75  Enhancement    High        Opening resource file from command line fails
+Issue 66  Documentation  High        Better documentation for using spec files
+Issue 76  Defect         Medium      Cannot create a new suite of tests in a file in Robot Framework IDE
+Issue 67  Enhancement    Medium      Should first check can the library be imported directly and only after that use possible spec file
+========  =============  ==========  ==================================================================================================
+
+
+RIDE 0.11
+=========
+
+Version 0.11 was released 14.11.2008.
+The major new functionalities are the back and forward navigation with menu option or keyboard shortcuts Alt-Left and Alt-Right (issue31) and Undo possibility in the grid editors (issue2). Additional enhancements and bug fixes are listed below:
+
+========  ===========  ==========  ======================================================================================
+*ID*      *Type*       *Priority*  *Summary*
+========  ===========  ==========  ======================================================================================
+Issue 31  Enhancement  High        Back and forward functionality to keyword linking
+Issue 2   Enhancement  High        Undo
+Issue 54  Defect       High        It is not possible to have a variable as a timeout value
+Issue 21  Defect       Medium      Delete key does not work properly when editing contents of a cell
+Issue 29  Defect       Medium      Empty keyword name with auto completion causes first keyword to be written to the cell
+Issue 35  Defect       Medium      Keyword documentation pop-up flickers on Windows
+Issue 48  Defect       Medium      Searching keyword should work with keyword names without spaces
+Issue 49  Defect       Medium      Changes are not noticed when cell editor is still open after first save
+Issue 10  Enhancement  Medium      Source of keyword should be visible in the keyword documentation popup
+========  ===========  ==========  ======================================================================================
+
+
+RIDE 0.10.1
+===========
+
+Version 0.10.1 was released 14.10.2008.
+It contains a fix for bug that prevents copying or cutting multiple cells in test case or user keyword editors.
+
+
+RIDE 0.10
+=========
+
+Version 0.10 was released 13.10.2008
+Major new features are navigation to user keyword definition (issue8) and keyword documentation tooltip (issue28).
+
+========  ===========  ==========  ===================================================================================
+*ID*      *Type*       *Priority*  *Summary*
+========  ===========  ==========  ===================================================================================
+Issue 8   Enhancement  High        Navigation to user keyword definition
+Issue 7   Enhancement  Medium      User keyword and test case names should be checked for uniqueness
+Issue 17  Enhancement  Medium      New project creation should not convert filenames to lowercase
+Issue 18  Enhancement  Medium      Should not ask for confirmation about save
+Issue 26  Enhancement  Medium      Warning if using old Robot Framework version
+Issue 28  Enhancement  Medium      Show a tooltip containing keyword documentation in test case or user keyword editor
+Issue 22  Defect       Low         List selection should change when an item is deleted
+Issue 23  Enhancement  Low         Additional shortcut for keyword completion
+========  ===========  ==========  ===================================================================================
+
+
+__ https://github.com/robotframework/RIDE/downloads
+__ http://code.google.com/p/robotframework/wiki/ReleaseNotes25
+__ http://code.google.com/p/robotframework/wiki/ReleaseNotes21
+__ Settings
+__ Settings
+__ http://www.orbitz.com

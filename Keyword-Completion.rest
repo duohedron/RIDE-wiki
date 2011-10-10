@@ -1,0 +1,286 @@
+Keyword Completion
+==================
+
+.. contents::
+  :local:
+  :depth: 2
+
+Using keyword completion
+========================
+
+Keyword Completion is a powerful feature that allows users to type a
+beginning of a keyword, and then get a list of available completions
+from imported libraries and resource files. It works both in the test
+data editor grid and in settings that have keywords as they values. It
+can be invoked with key combinations `Ctrl-Space` and `Ctrl-Alt-Space`,
+or by choosing the menu entry `Tools > Keyword Completion`.
+
+For keyword completion to work the library or resource containing the
+keyword must be taken into use and be found by RIDE. How to accomplish
+that is explained in the subsequent sections on this page.
+
+[[images/completionkw.png]]
+
+Having libraries and resources available
+========================================
+
+Importing libraries and resources
+---------------------------------
+
+The normal approach for taking libraries and resources into use is
+importing them in the test case or resource file where the keywords they provide are
+used. In RIDE this is done using `Add Library` or `Add Resource`
+buttons, respectively, on the test suite or resource file view. Libraries and resources may also be imported
+indirectly via another resource file.
+
+Automatic library imports
+-------------------------
+
+Keyword completion in RIDE does not support importing libraries or
+resources dynamically using, for example, `Import Library` or `Import Resource`
+`BuiltIn`__ keywords,
+or `Take Library Into Use` from
+`RemoteApplications`__.
+To support keywords from such dynamically imported libraries in
+completion, it is possible to configure RIDE to import certain libraries automatically. Importing resources automatically is not currently supported.
+
+Automatic imports are specified in `settings`__ using option
+`auto imports` as illustrated below. Currently settings must be
+edited manually, but there is likely to be an separate UI for in the future (issue 861).
+
+::
+
+    # Auto imports is a list of libraries whose keywords are always visible in keyword completion.
+    # If the library needs arguments, they follow the library name with '|' as a separator.
+    # Example: auto imports = ['MyLib', 'AnotherLibraryWithArgs|arg1|arg2']
+    auto imports = []
+
+
+
+Finding imported libraries and resources
+========================================
+
+When libraries or resources are imported, RIDE tries to find keywords
+they contain using various methods. This section explains how
+different libraries and resources are found and what users can do to
+make them available.
+
+Standard libraries
+------------------
+
+Robot Framework `standard libraries`__ are always found automatically.
+
+Python based libraries available locally
+----------------------------------------
+
+If a custom Python based library is available locally, it should be
+always be pretty easy to make its keywords available for RIDE. RIDE
+only needs to find the actual library and then it can import it the
+same way as Robot Framework does when it is executing tests.
+
+Python libraries may be imported, depending on a library, either using
+the library name (e.g. `| Library | MyLibrary |`) or a path to the
+library in file system (e.g. `| Library | path/to/MyLibrary.py |`).
+First two subsections below discuss the former and the third one
+the latter.
+
+Installed Python libraries
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python based libraries that are installed using a graphical installer,
+source distribution, or some other means should be found
+automatically. If that is not the case, you need to contact library
+developers for more information.
+
+Non-installed Python libraries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python based libraries that are not installed are not found by default
+but making them available for RIDE is easy. All that needs to
+be done is `setting PYTHONPATH`__ correctly.
+
+Python libraries imported using path
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python based libraries imported using a path to the library on the
+file system should be found automatically.
+
+Libraries not available locally or written in Java
+--------------------------------------------------
+
+If a library is not written with Python or is not available locally,
+RIDE cannot import the library and thus cannot find its keywords
+automatically. A solution this problem is
+`using a library spec file`__
+that contains library's documentation. RIDE obviously also needs to
+find the spec files and that requires them to be in
+`PYTHONPATH`__.
+
+Resource files
+--------------
+
+Resource files imported using path
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Resource files are normally imported using an absolute or relative
+path pointing to them. In this case the resource file and keywords it
+contains are found automatically.
+
+Resource files in PYTHONPATH
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Resource files can also be imported using a relative path to a
+directory in PYTHONPATH. Assuming that
+`PYTHONPATH is set correctly`__, also this should
+work automatically.
+
+
+Setting PYTHONPATH
+==================
+
+PYTHONPATH is a list of places, mainly directories, where modules a Python program imports are search from. PYTHONPATH is used automatically by Python when a
+library is imported in RIDE, and RIDE also uses PYTHONPATH for finding
+resource files and library specs itself. PYTHONPATH is explained more
+thoroughly in
+`Robot Framework User Guide`__
+and this section mainly discusses the most important ways to set it
+with RIDE.
+
+Setting environment variable
+----------------------------
+
+Setting a system-wide environment variable is an easy way to set
+PYTHONPATH persistently for RIDE and all other Python programs. How to
+do that depends on the operating system.
+
+On Windows you can set environment variables in system settings
+(`Start > Settings > Control Panel > System > Advanced > Environment Variables`)
+and you need to separate different entries with a
+semicolon (`;`). On other operating system you typically edit some
+start-up script and need to separate entries with a colon (`:`).
+
+Setting temporary variable
+--------------------------
+
+PYTHONPATH can also be set temporarily so that other programs are not
+affected. This is especially useful in custom start-up scripts but
+also when starting RIDE from the command line.
+
+On Windows you can set a temporary variable available only on the current command prompt by using `set` command before starting RIDE:
+
+::
+
+    C:\> set PYTHONPATH=c:\robot\libs
+    C:\> ride.py
+
+
+On other operating setting variables depends on the shell you
+use. When using Bash, the most convenient way is setting the
+variable before the executed command:
+
+::
+
+    $ PYTHONPATH=/opt/robot/libs ride.py
+
+
+Setting PYTHONPATH in RIDE
+--------------------------
+
+Starting from RIDE 0.39, it is possible to set PYTHONPATH also in
+RIDE itself. This is done using `pythonpath` `setting`__ and
+in the future there is likely to be a separate UI (issue 861).
+
+::
+
+    # Locations to add into PYTHONPATH. Non-absolute paths are considered relative
+    # to the directory where RIDE starts. Backslashes must be escaped by doubling
+    # them (\\). Alternatively it is possible to use forward slash (/) as the path
+    # separator regardless the operating systems.
+    # Example: pythonpath = ['c:/robot/testlibs', 'd:/project/resources']
+    pythonpath = []
+
+
+A benefit of setting PYTHONPATH in RIDE is that you only need to do it
+once. A small drawback is that, at least currently, you cannot easily
+change PYTHONPATH depending on what you are editing.
+
+
+Using library specs
+===================
+
+If RIDE cannot import the actual library directly, it still can get
+library documentation from library spec files that contain the information in simple XML format. If you are using a generic library, it should provide a spec to be use with RIDE separately in downloads.  With your own libraries you need to create the spec file yourself.
+
+How RIDE finds spec files
+-------------------------
+
+Just creating a spec is not enough as RIDE also needs to find it. RIDE
+searches specs from directories in `PYTHONPATH`__ so
+you need to add the directory containing your specs there.
+
+Creating library specs
+----------------------
+
+Library specs can be created using
+`libdoc.py`__ tool that is also used for creating documentation in HTML format.
+`libdoc.py` can create documentation both from Python and Java based
+libraries. In the latter case you must use Jython and have `tools.jar`
+containing Javadoc utilities in CLASSPATH. The following two examples
+illustrate using `libdoc.py` and its documentation and help text can
+be consulted for more details and examples.
+
+::
+
+      # Create spec for a Python library
+      python libdoc.py --format XML src/MyPythonLib.py
+    
+      # Create spec for a Java based library
+      CLASSPATH=/usr/lib/jvm/sun-java-6/lib/tools.jar:myjavalib-0.1.jar jython libdoc.py -f XML MyJavaLibrary
+
+
+
+Example
+=======
+
+The  following  example illustrates  various  ways  how libraries  and
+resources imported in RIDE can be found.
+
+The suite has following imports:
+
+=========  ===============
+*Setting*  *Value*
+=========  ===============
+Library    OperatingSystem
+Library    SeleniumLibrary
+Library    SwingLibrary
+Library    MyLibrary
+Library    JavaLibrary
+Resource   res.html
+=========  ===============
+
+  #. `OperatingSystem`__ is a Robot Framework standard library and its keywords are found automatically.
+  #. `SeleniumLibrary`__ is a Python based test library. If the library is installed its keywords are found automatically.
+  #. `SwingLibrary`__ is a Java based test library. Having its keywords available requires `using a spec file`__ that can be `downloaded separately`__.
+  #. MyLibrary is a hypothetical Python library that does not support installation. In this case, the directory containing the library must be found from `PYTHONPATH`__.
+  #. JavaLibrary is a hypothetical library implemented in Java. Using its keywords in completion requires `creating a spec file`__ and putting it into PYTHONPATH.
+  #. res.html is a resource file and its keywords are found automatically.
+
+__ http://code.google.com/p/robotframework/wiki/BuiltInLibrary
+__ https://github.com/robotframework/RemoteApplications
+__ Settings
+__ http://code.google.com/p/robotframework/wiki/TestLibraries
+__ `Setting PYTHONPATH`_
+__ `Using library specs`_
+__ `Setting PYTHONPATH`_
+__ `Setting PYTHONPATH`_
+__ http://code.google.com/p/robotframework/wiki/UserGuide
+__ Settings
+__ `Setting PYTHONPATH`_
+__ http://code.google.com/p/robotframework/wiki/LibraryDocumentationTool
+__ http://code.google.com/p/robotframework/wiki/OperatingSystemLibrary
+__ http://code.google.com/p/robotframework-seleniumlibrary/
+__ https://github.com/robotframework/SwingLibrary
+__ `Using library specs`_
+__ https://github.com/robotframework/SwingLibrary/downloads
+__ `Setting PYTHONPATH`_
+__ `Creating library specs`_

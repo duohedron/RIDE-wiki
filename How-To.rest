@@ -77,9 +77,20 @@ In the future releases this functionality will be enhanced to support also libra
 Search for keywords
 ===================
 
-Select from menu `Tools -> Search Keywords`, and keyword search dialog is opened. This dialog is non-modal, so it can be kept open at all times during editing. By default, the search only covers keyword names, but by selecting the checkbox 'Search Documentation', also the keyword documentation is included in the search.
+Select from menu `Tools -> Search Keywords`, and keyword search dialog is opened. Keywords from all resolved library and resource imports are listed. The dialog is non-modal, so it can be kept open at all times during editing. By default, the search only covers keyword names, but by selecting the checkbox 'Search Documentation', also the keyword documentation is included in the search.
 
 [[images/searchkw.png]]
+
+Search for test cases based on used keywords or tags
+====================================================
+
+There's a separate plugin, called `Search Plugin`, that supports searching
+test cases based on keywords or tags of the tests. Search results are shown in
+a list, and by clicking a list item, the corresponding test is opened in the
+editor.
+
+This plugin can be enabled via the [Plugin Manager|Plugins]. Once enabled, a
+new menu item `Tools -> Search` is added to the menu bar.
 
 Create keyword
 ==============

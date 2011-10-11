@@ -41,9 +41,9 @@ RIDE is distributed as separate installation packages for Windows and for other 
 Installing from source
 ----------------------
 
- # Get the source distribution.
- # Extract it e.g. with command `tar xzvf robotide-<version>.tar.gz`.
- # Go to the created directory and run `python setup.py install`. Notice that you need to use `sudo python setup.py install` to install to everyone.
+  * Get the source distribution.
+  * Extract it e.g. with command `tar xzvf robotide-<version>.tar.gz`.
+  * Go to the created directory and run `python setup.py install`. Notice that you need to use `sudo python setup.py install` to install to everyone.
 
 Using Windows installer
 -----------------------

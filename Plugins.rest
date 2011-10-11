@@ -1,0 +1,15 @@
+=======
+Plugins
+=======
+
+Introduction
+============
+
+RIDE allows adding additional functionality via plugins. Several plugins are included in the basic installation, and additional plugins may be available from other sources.
+
+Managing Plugins
+================
+
+Selecting `Tools|Manage Plugins` from main menu opens a Plugin manager. The
+available plugins are listed, and there's a possibility to activate/deactivate
+them.

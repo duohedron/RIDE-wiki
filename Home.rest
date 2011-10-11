@@ -12,5 +12,5 @@ RIDE is a test data editor for `Robot Framework`__ test data. The latest release
   * [[Templates]] explains how to preserve external content when test data is
     stored in HTML format.
 
-__ https://github.com/robotframework/RIDE/downloads
 __ http://robotframework.org
+__ https://github.com/robotframework/RIDE/downloads

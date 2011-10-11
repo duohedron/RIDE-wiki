@@ -48,8 +48,8 @@ Installing from source
 Using Windows installer
 -----------------------
 
- # Get Windows installer
- # Double click the installer and click through the opened GUI.
+  * Get Windows installer
+  * Double click the installer and click through the opened GUI.
 
 Using `pip` or `easy_install`
 ----------------------------

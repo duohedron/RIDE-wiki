@@ -2,12 +2,13 @@
 Old Release Notes
 =================
 
+Here are release notes for releases made from the old Google Code project__
+
+__ http://code.google.com/p/robotframework-ride/
+
 .. contents::
   :local:
   :depth: 1
-
-Latest installers are always available in the
-`download page`__.
 
 RIDE 0.39
 =========
@@ -1114,7 +1115,6 @@ Issue 23  Enhancement  Low         Additional shortcut for keyword completion
 ========  ===========  ==========  ===================================================================================
 
 
-__ https://github.com/robotframework/RIDE/downloads
 __ http://code.google.com/p/robotframework/wiki/ReleaseNotes25
 __ http://code.google.com/p/robotframework/wiki/ReleaseNotes21
 __ Settings

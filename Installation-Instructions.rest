@@ -51,8 +51,8 @@ Using Windows installer
  # Get Windows installer
  # Double click the installer and click through the opened GUI.
 
-Using `easy_install`
---------------------
+Using `pip`or `easy_install`
+----------------------------
 
 RIDE can also be installed with pip/easy_install:
 

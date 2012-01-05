@@ -22,4 +22,4 @@ updated or a GUI is offered for editing them.  However, there are currently
 some settings that must be edited manually, for example the `default template`
 setting used by [[Templates]].
 
-A graphical settings managed is targeted for version 0.40.
+A graphical settings managed is targeted for version 0.41.

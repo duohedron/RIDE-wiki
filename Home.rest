@@ -2,7 +2,7 @@ RIDE is a test data editor for `Robot Framework`__ test data. The latest release
 
   * Please read the [[Installation Instructions]] to get smoothly started.
   * [[Release Notes]] contains the list of enhancements/bug fixes per
-    release. [[Old Release Notes]] are also archived.
+    release.
   * [[How To]] contains a list of useful tips for more efficient RIDE
     usage. [[Keyword Completion]] is one of the most powerful RIDE features.
   * Tests can also be executed straight from RIDE via [[Test Runner Plugin]].

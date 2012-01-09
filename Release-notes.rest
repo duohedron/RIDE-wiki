@@ -1,3 +1,40 @@
 The latest releases are available from the `download page`__
 
+RIDE 0.40
+=========
+
+There are two major improvements in the RIDE 0.40. First, a plain text editor was added to enable
+editing whole file at a time (issue 899). Second, it is now possible to write plain text files so 
+that columns are aligned according to headers (issue 903). This supports writing data-driven tests
+with RIDE more efficiently. In addition, files written in HTML and TSV formats are now cleaner.
+
+Some other improvements and bug fixes are included, all of which are listed in the table below.
+
+
+============ =========== ======== =============================================================================
+     ID          Type    Priority                                    Summary                                   
+============ =========== ======== =============================================================================
+`Issue 899`_ Defect      High     Renaming a dirty Test Suite, gets its file deleted                           
+`Issue 903`_ Enhancement High     Improved data formatting when saving                                         
+`Issue 904`_ Enhancement High     Support for editing test data in plain text format                           
+`Issue 735`_ Defect      Medium   Using # character to comment rows collapses the commented row on next startup
+`Issue 876`_ Defect      Medium   Bug in testrunner plugin, module SocketListener.py                           
+`Issue 892`_ Defect      Medium   RIDE cannot create a new top level suite file                                
+`Issue 893`_ Defect      Medium   RIDE - Problems in multiuser environment due to hard-coded port no.          
+`Issue 897`_ Defect      Medium   HTML files are always written using unix line separators                     
+`Issue 901`_ Enhancement Medium   Show table headers in grid editor                                            
+============ =========== ======== =============================================================================
+
+.. _Issue 899: http://code.google.com/p/robotframework-ride/issues/detail?id=899
+.. _Issue 903: http://code.google.com/p/robotframework-ride/issues/detail?id=903
+.. _Issue 904: http://code.google.com/p/robotframework-ride/issues/detail?id=904
+.. _Issue 735: http://code.google.com/p/robotframework-ride/issues/detail?id=735
+.. _Issue 876: http://code.google.com/p/robotframework-ride/issues/detail?id=876
+.. _Issue 892: http://code.google.com/p/robotframework-ride/issues/detail?id=892
+.. _Issue 893: http://code.google.com/p/robotframework-ride/issues/detail?id=893
+.. _Issue 897: http://code.google.com/p/robotframework-ride/issues/detail?id=897
+.. _Issue 901: http://code.google.com/p/robotframework-ride/issues/detail?id=901
+
+Altogether 9 issues.
+
 __ https://github.com/robotframework/RIDE/downloads

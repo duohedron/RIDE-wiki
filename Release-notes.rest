@@ -1,7 +1,10 @@
+Release notes
+=============
+
 The latest releases are available from the `download page`__
 
 RIDE 0.40
-=========
+---------
 
 There are two major improvements in the RIDE 0.40. First, a plain text editor was added to enable
 editing whole file at a time (issue 899). Second, it is now possible to write plain text files so 

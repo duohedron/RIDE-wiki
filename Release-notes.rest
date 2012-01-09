@@ -1,5 +1,10 @@
+=============
 Release notes
 =============
+
+.. contents::
+  :local:
+  :depth: 1
 
 The latest releases are available from the `download page`__
 
@@ -41,3 +46,9 @@ Some other improvements and bug fixes are included, all of which are listed in t
 Altogether 9 issues.
 
 __ https://github.com/robotframework/RIDE/downloads
+
+
+Old release notes
+-----------------
+
+Old release notes are [[archived|Old Release Notes]].

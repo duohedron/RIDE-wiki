@@ -7,8 +7,8 @@ RIDE 0.40
 ---------
 
 There are two major improvements in the RIDE 0.40. First, a plain text editor was added to enable
-editing whole file at a time (issue 899). Second, it is now possible to write plain text files so 
-that columns are aligned according to headers (issue 903). This supports writing data-driven tests
+editing whole file at a time (`issue 899`_). Second, it is now possible to write plain text files so 
+that columns are aligned according to headers (`issue 903`_). This supports writing data-driven tests
 with RIDE more efficiently. In addition, files written in HTML and TSV formats are now cleaner.
 
 Some other improvements and bug fixes are included, all of which are listed in the table below.

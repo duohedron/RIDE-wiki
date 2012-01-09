@@ -6,10 +6,10 @@ Release notes
   :local:
   :depth: 1
 
-The latest releases are available from the `download page`__
+The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
 RIDE 0.40
----------
+=========
 
 There are two major improvements in the RIDE 0.40. First, a plain text editor was added to enable
 editing whole file at a time (`issue 899`_). Second, it is now possible to write plain text files so 
@@ -46,9 +46,3 @@ Some other improvements and bug fixes are included, all of which are listed in t
 Altogether 9 issues.
 
 __ https://github.com/robotframework/RIDE/downloads
-
-
-Old release notes
------------------
-
-Old release notes are [[archived|Old Release Notes]].

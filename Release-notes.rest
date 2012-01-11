@@ -8,6 +8,30 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+
+RIDE 0.40.1
+===========
+
+RIDE 0.40 unfortunately contained some pretty severe bugs, and RIDE 0.40.1 was released shortly after to fix these.
+All the fixed bugs are listed in the below table:
+
+============ =========== ======== ============================================================================================
+     ID          Type    Priority                                           Summary                                           
+============ =========== ======== ============================================================================================
+`Issue 907`_ Defect      Critical Unable to open ride.py if large quantity of tests in directories                            
+`Issue 910`_ Enhancement High     Backup file when saving so that it can be restored if saving fails                          
+`Issue 798`_ Defect      Medium   ProgressDialog_Pulse can't be initialized when running ride along with projects file opening
+`Issue 909`_ Defect      Medium   "Hide All Test Cases" doesn't work                                                          
+============ =========== ======== ============================================================================================
+
+.. _Issue 907: http://code.google.com/p/robotframework-ride/issues/detail?id=907
+.. _Issue 910: http://code.google.com/p/robotframework-ride/issues/detail?id=910
+.. _Issue 798: http://code.google.com/p/robotframework-ride/issues/detail?id=798
+.. _Issue 909: http://code.google.com/p/robotframework-ride/issues/detail?id=909
+
+Altogether 4 issues.
+
+
 RIDE 0.40
 =========
 

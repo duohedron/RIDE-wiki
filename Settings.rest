@@ -18,8 +18,6 @@ Modifying settings
 ==================
 
 Most of the settings are designed so that they will either be automatically
-updated or a GUI is offered for editing them.  However, there are currently
-some settings that must be edited manually, for example the `default template`
-setting used by [[Templates]].
+updated or a GUI is offered for editing them. However, some settings can only be changed by manually editing the settings file.
 
-A graphical settings managed is targeted for version 0.41.
+A graphical settings manager is targeted for version 0.41.

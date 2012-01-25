@@ -154,14 +154,16 @@ This feature can be accessed via context menu in test case or user keyword edito
 Run external programs
 =====================
 
-There's a built-in plugin `Run` which can be used to run arbitrary commands in the system. Run configurations may be created, edited and deleted via `Run | Manage Run Configurations` menu. The configurations are stored in the [Settings] file, and may thus be shared between users.
+There's a built-in plugin `Run` which can be used to run arbitrary commands in the system. Run configurations may be created, edited and deleted via `Run | Manage Run Configurations` menu. The configurations are stored in the [[Settings]] file, and may thus be shared between users.
 
 
-Save Files in Pipe-separated Format
-===================================
+Configuring saving
+==================
 
-Open the [[Settings]] file for editing and change value of `txt format separator` setting to `pipe`.
+There are two settings that can be used to configure how files are written. Currently both of these have to be manually [[edited|Settings]]. These are:
 
+  * `line separator` - can be used to force line endings. Valid values are `native` (the default), `windows` and `unix`
+  * `txt format separator` - cell separator in txt format. Valid values are `space` (the default) and `pipe`
 
 Linking from imported resource to tree
 ======================================

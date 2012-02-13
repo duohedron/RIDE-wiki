@@ -8,6 +8,33 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.41
+=========
+
+A major problem in 64 bit Windows 7 where RIDE froze when Google Chrome is
+running was fixed (`Issue 714`_). Also special thanks to Andreas Brain for contributing
+Sorting of keywords (`Issue 624`_).
+
+============ =========== ======== ======================================================
+     ID          Type    Priority                        Summary
+============ =========== ======== ======================================================
+`Issue 714`_ Defect      High     RIDE sometimes hangs up while google chrome is running
+`Issue 888`_ Defect      High     Support wxPython 2.9 in OSX
+`Issue 918`_ Defect      High     Errors thrown by RIDE 0.40.2 Test Runner
+`Issue 924`_ Defect      High     Encoding error
+`Issue 624`_ Enhancement Medium   Sorting of keywords
+`Issue 882`_ Enhancement Medium   Remove support for serializing old style metadata
+============ =========== ======== ======================================================
+
+.. _Issue 714: http://code.google.com/p/robotframework-ride/issues/detail?id=714
+.. _Issue 888: http://code.google.com/p/robotframework-ride/issues/detail?id=888
+.. _Issue 918: http://code.google.com/p/robotframework-ride/issues/detail?id=918
+.. _Issue 924: http://code.google.com/p/robotframework-ride/issues/detail?id=924
+.. _Issue 624: http://code.google.com/p/robotframework-ride/issues/detail?id=624
+.. _Issue 882: http://code.google.com/p/robotframework-ride/issues/detail?id=882
+
+Altogether 6 issues.
+
 
 RIDE 0.40.1
 ===========
@@ -16,12 +43,12 @@ RIDE 0.40 unfortunately contained some pretty severe bugs, and RIDE 0.40.1 was r
 All the fixed bugs are listed in the below table:
 
 ============ =========== ======== ============================================================================================
-     ID          Type    Priority                                           Summary                                           
+     ID          Type    Priority                                           Summary
 ============ =========== ======== ============================================================================================
-`Issue 907`_ Defect      Critical Unable to open ride.py if large quantity of tests in directories                            
-`Issue 910`_ Enhancement High     Backup file when saving so that it can be restored if saving fails                          
+`Issue 907`_ Defect      Critical Unable to open ride.py if large quantity of tests in directories
+`Issue 910`_ Enhancement High     Backup file when saving so that it can be restored if saving fails
 `Issue 798`_ Defect      Medium   ProgressDialog_Pulse can't be initialized when running ride along with projects file opening
-`Issue 909`_ Defect      Medium   "Hide All Test Cases" doesn't work                                                          
+`Issue 909`_ Defect      Medium   "Hide All Test Cases" doesn't work
 ============ =========== ======== ============================================================================================
 
 .. _Issue 907: http://code.google.com/p/robotframework-ride/issues/detail?id=907
@@ -36,7 +63,7 @@ RIDE 0.40
 =========
 
 There are two major improvements in the RIDE 0.40. First, a plain text editor was added to enable
-editing whole file at a time (`issue 899`_). Second, it is now possible to write plain text files so 
+editing whole file at a time (`issue 899`_). Second, it is now possible to write plain text files so
 that columns are aligned according to headers (`issue 903`_). This supports writing data-driven tests
 with RIDE more efficiently. In addition, files written in HTML and TSV formats are now cleaner.
 
@@ -44,17 +71,17 @@ Some other improvements and bug fixes are included, all of which are listed in t
 
 
 ============ =========== ======== =============================================================================
-     ID          Type    Priority                                    Summary                                   
+     ID          Type    Priority                                    Summary
 ============ =========== ======== =============================================================================
-`Issue 899`_ Defect      High     Renaming a dirty Test Suite, gets its file deleted                           
-`Issue 903`_ Enhancement High     Improved data formatting when saving                                         
-`Issue 904`_ Enhancement High     Support for editing test data in plain text format                           
+`Issue 899`_ Defect      High     Renaming a dirty Test Suite, gets its file deleted
+`Issue 903`_ Enhancement High     Improved data formatting when saving
+`Issue 904`_ Enhancement High     Support for editing test data in plain text format
 `Issue 735`_ Defect      Medium   Using # character to comment rows collapses the commented row on next startup
-`Issue 876`_ Defect      Medium   Bug in testrunner plugin, module SocketListener.py                           
-`Issue 892`_ Defect      Medium   RIDE cannot create a new top level suite file                                
-`Issue 893`_ Defect      Medium   RIDE - Problems in multiuser environment due to hard-coded port no.          
-`Issue 897`_ Defect      Medium   HTML files are always written using unix line separators                     
-`Issue 901`_ Enhancement Medium   Show table headers in grid editor                                            
+`Issue 876`_ Defect      Medium   Bug in testrunner plugin, module SocketListener.py
+`Issue 892`_ Defect      Medium   RIDE cannot create a new top level suite file
+`Issue 893`_ Defect      Medium   RIDE - Problems in multiuser environment due to hard-coded port no.
+`Issue 897`_ Defect      Medium   HTML files are always written using unix line separators
+`Issue 901`_ Enhancement Medium   Show table headers in grid editor
 ============ =========== ======== =============================================================================
 
 .. _Issue 899: http://code.google.com/p/robotframework-ride/issues/detail?id=899

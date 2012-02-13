@@ -19,7 +19,6 @@ Sorting of keywords (`Issue 624`_).
      ID          Type    Priority                        Summary
 ============ =========== ======== ======================================================
 `Issue 714`_ Defect      High     RIDE sometimes hangs up while google chrome is running
-`Issue 888`_ Defect      High     Support wxPython 2.9 in OSX
 `Issue 918`_ Defect      High     Errors thrown by RIDE 0.40.2 Test Runner
 `Issue 924`_ Defect      High     Encoding error
 `Issue 624`_ Enhancement Medium   Sorting of keywords

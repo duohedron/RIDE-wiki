@@ -26,13 +26,12 @@ Sorting of keywords (`Issue 624`_).
 ============ =========== ======== ======================================================
 
 .. _Issue 714: http://code.google.com/p/robotframework-ride/issues/detail?id=714
-.. _Issue 888: http://code.google.com/p/robotframework-ride/issues/detail?id=888
 .. _Issue 918: http://code.google.com/p/robotframework-ride/issues/detail?id=918
 .. _Issue 924: http://code.google.com/p/robotframework-ride/issues/detail?id=924
 .. _Issue 624: http://code.google.com/p/robotframework-ride/issues/detail?id=624
 .. _Issue 882: http://code.google.com/p/robotframework-ride/issues/detail?id=882
 
-Altogether 6 issues.
+Altogether 5 issues.
 
 
 RIDE 0.40.1

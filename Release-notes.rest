@@ -8,6 +8,35 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.42
+=========
+
+============ =========== ======== ==============================================================
+     ID          Type    Priority                            Summary                            
+============ =========== ======== ==============================================================
+`Issue 917`_ Defect      High     Common Windows shorcuts don't work in Text Edit tab or Run tab
+`Issue 939`_ Defect      High     No more possible to save TXT file from Ride when Backup fails 
+`Issue 3`_   Enhancement High     Find unused User Keywords                                     
+`Issue 926`_ Enhancement High     Ability to ignore a directory when loading data               
+`Issue 911`_ Defect      Medium   Suffix of resource file disappears after rename               
+`Issue 930`_ Defect      Medium   Library import with relative path doesn't work in RIDE 0.41   
+`Issue 920`_ Enhancement Medium   Sorting of external resources                                 
+`Issue 931`_ Enhancement Medium   Unknown variables should be colored differently from known    
+`Issue 938`_ Enhancement Medium   "Report a Problem" option to Help menu                        
+============ =========== ======== ==============================================================
+
+.. _Issue 917: http://code.google.com/p/robotframework-ride/issues/detail?id=917
+.. _Issue 939: http://code.google.com/p/robotframework-ride/issues/detail?id=939
+.. _Issue 3: http://code.google.com/p/robotframework-ride/issues/detail?id=3
+.. _Issue 926: http://code.google.com/p/robotframework-ride/issues/detail?id=926
+.. _Issue 911: http://code.google.com/p/robotframework-ride/issues/detail?id=911
+.. _Issue 930: http://code.google.com/p/robotframework-ride/issues/detail?id=930
+.. _Issue 920: http://code.google.com/p/robotframework-ride/issues/detail?id=920
+.. _Issue 931: http://code.google.com/p/robotframework-ride/issues/detail?id=931
+.. _Issue 938: http://code.google.com/p/robotframework-ride/issues/detail?id=938
+
+Altogether 9 issues.
+
 RIDE 0.41
 =========
 

@@ -8,6 +8,48 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.43
+=========
+
+============ ============= ======== ==================================================================================================
+     ID           Type     Priority                                              Summary                                              
+============ ============= ======== ==================================================================================================
+`Issue 861`_ Enhancement   High     UI for editing RIDE's settings                                                                    
+`Issue 157`_ Defect        Medium   RIDE should not allow editing read-only files                                                     
+`Issue 442`_ Defect        Medium   Help-About isn't available on OSX                                                                 
+`Issue 781`_ Defect        Medium   Help-Release Notes not available on Mac OSX after first launch                                    
+`Issue 895`_ Defect        Medium   The pythonpath setting is not used by Run plugin                                                  
+`Issue 943`_ Defect        Medium   Copy does not work in the output view of Run tab                                                  
+`Issue 945`_ Defect        Medium   Can't run test from RIDE due to assci issue                                                       
+`Issue 952`_ Defect        Medium   RIDE should survive if configuration file is corrupted                                            
+`Issue 623`_ Enhancement   Medium   Check for updates once a week                                                                     
+`Issue 871`_ Enhancement   Medium   Create variable keyboard shortcut                                                                 
+`Issue 927`_ Enhancement   Medium   Default space number should be cofigurable                                                        
+`Issue 932`_ Enhancement   Medium   Mechanism for settings migration                                                                  
+`Issue 934`_ Enhancement   Medium   Colorize Library keywords in a different color than User keywords                                 
+`Issue 866`_ Documentation Medium   Document how to configure line separator                                                          
+`Issue 940`_ Defect        Low      In ReleaseNote Tab, the first three Hyperlinks should refer to GitHub now, no longer to GoogleCode
+============ ============= ======== ==================================================================================================
+
+.. _Issue 861: http://code.google.com/p/robotframework-ride/issues/detail?id=861
+.. _Issue 157: http://code.google.com/p/robotframework-ride/issues/detail?id=157
+.. _Issue 442: http://code.google.com/p/robotframework-ride/issues/detail?id=442
+.. _Issue 781: http://code.google.com/p/robotframework-ride/issues/detail?id=781
+.. _Issue 895: http://code.google.com/p/robotframework-ride/issues/detail?id=895
+.. _Issue 943: http://code.google.com/p/robotframework-ride/issues/detail?id=943
+.. _Issue 945: http://code.google.com/p/robotframework-ride/issues/detail?id=945
+.. _Issue 952: http://code.google.com/p/robotframework-ride/issues/detail?id=952
+.. _Issue 623: http://code.google.com/p/robotframework-ride/issues/detail?id=623
+.. _Issue 871: http://code.google.com/p/robotframework-ride/issues/detail?id=871
+.. _Issue 927: http://code.google.com/p/robotframework-ride/issues/detail?id=927
+.. _Issue 932: http://code.google.com/p/robotframework-ride/issues/detail?id=932
+.. _Issue 934: http://code.google.com/p/robotframework-ride/issues/detail?id=934
+.. _Issue 866: http://code.google.com/p/robotframework-ride/issues/detail?id=866
+.. _Issue 940: http://code.google.com/p/robotframework-ride/issues/detail?id=940
+
+Altogether 15 issues.
+
+
 RIDE 0.42
 =========
 

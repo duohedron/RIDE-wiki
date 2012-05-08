@@ -8,6 +8,28 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.44
+=========
+
+============ =========== ======== ===========================================================================
+     ID          Type    Priority                                   Summary                                  
+============ =========== ======== ===========================================================================
+`Issue 916`_ Defect      High     Slow saving in RIDE 0.40.2                                                 
+`Issue 947`_ Defect      Medium   Delete key behaves badly in 'Manage Run Configurations' dialog             
+`Issue 877`_ Enhancement Medium   Import library/resource/variables dialogs should propose known alternatives
+`Issue 966`_ Enhancement Medium   Reload Directory                                                           
+`Issue 969`_ Enhancement Medium   Keyboard shortcut for go to definition                                     
+`Issue 970`_ Enhancement Medium   Test Runner: Show currently executed keyword while running                 
+============ =========== ======== ===========================================================================
+
+.. _Issue 916: http://code.google.com/p/robotframework-ride/issues/detail?id=916
+.. _Issue 947: http://code.google.com/p/robotframework-ride/issues/detail?id=947
+.. _Issue 877: http://code.google.com/p/robotframework-ride/issues/detail?id=877
+.. _Issue 966: http://code.google.com/p/robotframework-ride/issues/detail?id=966
+.. _Issue 969: http://code.google.com/p/robotframework-ride/issues/detail?id=969
+.. _Issue 970: http://code.google.com/p/robotframework-ride/issues/detail?id=970
+
+
 RIDE 0.43
 =========
 

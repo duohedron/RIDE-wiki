@@ -8,6 +8,22 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.45
+=========
+
+============ =========== ======== ================================================================
+     ID          Type    Priority                             Summary                             
+============ =========== ======== ================================================================
+`Issue 703`_ Enhancement High     Integrate test run plugin to RIDE tree                          
+`Issue 929`_ Defect      Medium   popup help interferes with editing/copying/pasting of cells     
+`Issue 980`_ Defect      Medium   Wrong warning color when variable with default value and varargs
+============ =========== ======== ================================================================
+
+.. _Issue 703: http://code.google.com/p/robotframework-ride/issues/detail?id=703
+.. _Issue 929: http://code.google.com/p/robotframework-ride/issues/detail?id=929
+.. _Issue 980: http://code.google.com/p/robotframework-ride/issues/detail?id=980
+
+
 RIDE 0.44
 =========
 

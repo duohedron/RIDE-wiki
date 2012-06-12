@@ -143,7 +143,7 @@ PYTHONPATH is a list of places, mainly directories, where modules a Python progr
 library is imported in RIDE, and RIDE also uses PYTHONPATH for finding
 resource files and library specs itself. PYTHONPATH is explained more
 thoroughly in
-`Robot Framework User Guide`__
+`Robot Framework User Guide`_
 and this section mainly discusses the most important ways to set it
 with RIDE.
 
@@ -223,22 +223,28 @@ Creating library specs
 ----------------------
 
 Library specs can be created using
-`libdoc.py`__ tool that is also used for creating documentation in HTML format.
-`libdoc.py` can create documentation both from Python and Java based
+`libdoc`_ tool that is also used for creating documentation in HTML format.
+`libdoc` can create documentation both from Python and Java based
 libraries. In the latter case you must use Jython and have `tools.jar`
-containing Javadoc utilities in CLASSPATH. The following two examples
-illustrate using `libdoc.py` and its documentation and help text can
-be consulted for more details and examples.
+containing Javadoc utilities in CLASSPATH.
+
+Starting from Robot Framework 2.7, `libdoc` is bundled with the framework and can be executed like `interpreter -m robot.libdoc` or `interpreter path/to/robot/libdoc.py`, where `interpreter` can be `python`, `jython`, or `ipy` (IronPython). This is illustrated by the examples below, and `Robot Framework User Guide_` contains more information about the bundled `libdoc`.
 
 ::
+
+      # Create spec for a Python library
+      python -m robot.libdoc src/MyPythonLib.py MyPythonLibSpec.xml
+    
+      # Create spec for a Java based library
+      CLASSPATH=/usr/lib/jvm/sun-java-6/lib/tools.jar:myjavalib-0.1.jar jython -m robot.libdoc MyJavaLibrary MyJavaLibrarySpec.xml
+
+With Robot Framework 2.6 and earlier libdoc_ is available as a script that needs to be downloaded separately. It also has a slightly different usage than with 2.7 and newer::
 
       # Create spec for a Python library
       python libdoc.py --format XML src/MyPythonLib.py
     
       # Create spec for a Java based library
       CLASSPATH=/usr/lib/jvm/sun-java-6/lib/tools.jar:myjavalib-0.1.jar jython libdoc.py -f XML MyJavaLibrary
-
-
 
 Example
 =======
@@ -274,10 +280,10 @@ __ `Setting PYTHONPATH`_
 __ `Using library specs`_
 __ `Setting PYTHONPATH`_
 __ `Setting PYTHONPATH`_
-__ http://code.google.com/p/robotframework/wiki/UserGuide
+_ `Robot Framework User Guide`: http://code.google.com/p/robotframework/wiki/UserGuide
 __ Settings
 __ `Setting PYTHONPATH`_
-__ http://code.google.com/p/robotframework/wiki/LibraryDocumentationTool
+_ `libdoc`: http://code.google.com/p/robotframework/wiki/LibraryDocumentationTool
 __ http://code.google.com/p/robotframework/wiki/OperatingSystemLibrary
 __ http://code.google.com/p/robotframework-seleniumlibrary/
 __ https://github.com/robotframework/SwingLibrary

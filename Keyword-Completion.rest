@@ -280,10 +280,10 @@ __ `Setting PYTHONPATH`_
 __ `Using library specs`_
 __ `Setting PYTHONPATH`_
 __ `Setting PYTHONPATH`_
-_ `Robot Framework User Guide`: http://code.google.com/p/robotframework/wiki/UserGuide
+.. _Robot Framework User Guide: http://code.google.com/p/robotframework/wiki/UserGuide
 __ Settings
 __ `Setting PYTHONPATH`_
-_ `libdoc`: http://code.google.com/p/robotframework/wiki/LibraryDocumentationTool
+.. _libdoc: http://code.google.com/p/robotframework/wiki/LibraryDocumentationTool
 __ http://code.google.com/p/robotframework/wiki/OperatingSystemLibrary
 __ http://code.google.com/p/robotframework-seleniumlibrary/
 __ https://github.com/robotframework/SwingLibrary

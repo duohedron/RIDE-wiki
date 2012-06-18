@@ -11,6 +11,7 @@ Ctrl+Shift+S  Save all
 Ctrl+O        Open
 Ctrl+Shift+O  Open directory
 Ctrl+R        Open resource
+Ctrl+Shift+R  Refresh directory
 Ctrl+N        New project
 Ctrl+Shift+N  New resource
 Ctrl+Q        Quit RIDE

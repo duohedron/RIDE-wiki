@@ -8,6 +8,24 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.46
+=========
+============ =========== ======== ===============================================================================================================
+     ID          Type    Priority                                                     Summary                                                    
+============ =========== ======== ===============================================================================================================
+`Issue 881`_ Defect      Medium   Saving new testsuites with no tests with RIDE, causes an invalid data error when trying to open the suite later
+`Issue 974`_ Defect      Medium   When running test cases, the working directory is where RIDE is started, not where the test cases are located  
+`Issue 988`_ Defect      Medium   Table borders are not shown in suite/test/keyword documentation                                                
+`Issue 870`_ Enhancement Medium   tree: Show unused resource files                                                                               
+`Issue 531`_ Defect      Low      Delete key does not work in test case/user keyword rename on Windows                                           
+============ =========== ======== ===============================================================================================================
+
+.. _Issue 881: http://code.google.com/p/robotframework-ride/issues/detail?id=881
+.. _Issue 974: http://code.google.com/p/robotframework-ride/issues/detail?id=974
+.. _Issue 988: http://code.google.com/p/robotframework-ride/issues/detail?id=988
+.. _Issue 870: http://code.google.com/p/robotframework-ride/issues/detail?id=870
+.. _Issue 531: http://code.google.com/p/robotframework-ride/issues/detail?id=531
+
 RIDE 0.45
 =========
 

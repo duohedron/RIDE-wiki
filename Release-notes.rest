@@ -8,6 +8,22 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+
+RIDE 0.46.1
+===========
+============ ====== ======== ===========================================================================================
+     ID       Type  Priority                                           Summary                                          
+============ ====== ======== ===========================================================================================
+`Issue 997`_ Defect High     Cannot run test cases after opening a test suite                                           
+`Issue 999`_ Defect Medium   Saving changes in Text Edit mode causes selected tests in the Tree view to appear unchecked
+============ ====== ======== ===========================================================================================
+
+.. _Issue 997: http://code.google.com/p/robotframework-ride/issues/detail?id=997
+.. _Issue 999: http://code.google.com/p/robotframework-ride/issues/detail?id=999
+
+Altogether 2 issues.
+
+
 RIDE 0.46
 =========
 ============ =========== ======== ===============================================================================================================

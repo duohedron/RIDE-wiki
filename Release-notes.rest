@@ -8,6 +8,37 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.47
+===========
+
+============= ====== ======== ================================================================================
+      ID       Type  Priority                                     Summary                                     
+============= ====== ======== ================================================================================
+`Issue 987`_  Defect High     Saving during empty row edit will remove next row                               
+`Issue 1021`_ Defect High     Renaming a suite file while empty rows causes corrupt data                      
+`Issue 923`_  Defect Medium   Rename Test Case/Keyword does not take effect when focus is moved away          
+`Issue 982`_  Defect Medium   Pressing F2 on a non renameable tree element will disable F2                    
+`Issue 989`_  Defect Medium   Getting "Failed: Data source does not exist" errors                             
+`Issue 1015`_ Defect Medium   Directory doesn't accept non-ascii characters (V.0.46.1)                        
+`Issue 1017`_ Defect Medium   Argument highlighting is lost when passing in individual list items as arguments
+`Issue 1019`_ Defect Medium   Unicode characters in test execution output                                     
+`Issue 1022`_ Defect Medium   Delete-key in text editor and renaming                                          
+`Issue 900`_  Defect          Rename cancel does not return dirty status                                      
+============= ====== ======== ================================================================================
+
+.. _Issue 987: http://code.google.com/p/robotframework-ride/issues/detail?id=987
+.. _Issue 1021: http://code.google.com/p/robotframework-ride/issues/detail?id=1021
+.. _Issue 923: http://code.google.com/p/robotframework-ride/issues/detail?id=923
+.. _Issue 982: http://code.google.com/p/robotframework-ride/issues/detail?id=982
+.. _Issue 989: http://code.google.com/p/robotframework-ride/issues/detail?id=989
+.. _Issue 1015: http://code.google.com/p/robotframework-ride/issues/detail?id=1015
+.. _Issue 1017: http://code.google.com/p/robotframework-ride/issues/detail?id=1017
+.. _Issue 1019: http://code.google.com/p/robotframework-ride/issues/detail?id=1019
+.. _Issue 1022: http://code.google.com/p/robotframework-ride/issues/detail?id=1022
+.. _Issue 900: http://code.google.com/p/robotframework-ride/issues/detail?id=900
+
+Altogether 10 issues.
+
 
 RIDE 0.46.1
 ===========

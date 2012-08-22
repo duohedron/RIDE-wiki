@@ -8,6 +8,41 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.48
+===========
+
+============= =========== ======== ===========================================================================================
+      ID          Type    Priority                                           Summary                                          
+============= =========== ======== ===========================================================================================
+`Issue 693`_  Enhancement High     Importing resource through file browser                                                    
+`Issue 1034`_ Enhancement High     Stop test execution gracefully                                                             
+`Issue 941`_  Defect      Medium   input box of TestRunnerPlugin should handle "suppr" / Delete key in addition to "backspace"
+`Issue 977`_  Defect      Medium   Autocomplete does not show correct library name for duplicate keywords                     
+`Issue 1008`_ Defect      Medium   Extra white space after tables in suite/test/keyword documentation                         
+`Issue 1027`_ Defect      Medium   Clicking on "Stop" button doesn't stop test execution (RIDE: 0.46/0.47)                    
+`Issue 800`_  Enhancement Medium   Add option to stop test execution gracefully                                               
+`Issue 837`_  Enhancement Medium   Remember Last Opened Project on RIDE Restart/Reopen                                        
+`Issue 862`_  Enhancement Medium   Possibility to delete directory suites                                                     
+`Issue 873`_  Enhancement Medium   Test runner plugin: Show running message log during execution                              
+`Issue 990`_  Defect      Low      Run configuration list editor can't delete empty items                                     
+`Issue 1006`_ Enhancement Low      Add hot-keys for open report and log files                                                 
+============= =========== ======== ===========================================================================================
+
+.. _Issue 693: http://code.google.com/p/robotframework-ride/issues/detail?id=693
+.. _Issue 1034: http://code.google.com/p/robotframework-ride/issues/detail?id=1034
+.. _Issue 941: http://code.google.com/p/robotframework-ride/issues/detail?id=941
+.. _Issue 977: http://code.google.com/p/robotframework-ride/issues/detail?id=977
+.. _Issue 1008: http://code.google.com/p/robotframework-ride/issues/detail?id=1008
+.. _Issue 1027: http://code.google.com/p/robotframework-ride/issues/detail?id=1027
+.. _Issue 800: http://code.google.com/p/robotframework-ride/issues/detail?id=800
+.. _Issue 837: http://code.google.com/p/robotframework-ride/issues/detail?id=837
+.. _Issue 862: http://code.google.com/p/robotframework-ride/issues/detail?id=862
+.. _Issue 873: http://code.google.com/p/robotframework-ride/issues/detail?id=873
+.. _Issue 990: http://code.google.com/p/robotframework-ride/issues/detail?id=990
+.. _Issue 1006: http://code.google.com/p/robotframework-ride/issues/detail?id=1006
+
+Altogether 12 issues.
+
 RIDE 0.47
 ===========
 

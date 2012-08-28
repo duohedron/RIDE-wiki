@@ -22,7 +22,7 @@ RIDE 0.49
 `Issue 1048`_ Defect      Medium   Resource path autocompletes wrong in windows                                         
 `Issue 867`_  Enhancement Medium   setting for default file type                                                        
 `Issue 986`_  Enhancement Medium   The list of available shotcuts should be shown somewhere                             
-`Issue 1032`_ Enhancement Medium   Keyborad shortcut to add cell in the Grid editor                                     
+`Issue 1032`_ Enhancement Medium   Keyboard shortcut to add cell in the Grid editor                                     
 `Issue 1044`_ Enhancement Medium   Search in text editor                                                                
 ============= =========== ======== =====================================================================================
 

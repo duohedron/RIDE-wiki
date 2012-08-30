@@ -11,7 +11,7 @@ Preconditions
 Python
 ------
 
-RIDE runs only on the regular Python, not on Jython or Iron Python. Python 2.5 is the minimum version. Notice that similarly as Robot Framework, RIDE does not yet support Python 3.
+RIDE runs only on the regular Python, not on Jython or Iron Python. Python 2.6 is the minimum version. Notice that similarly as Robot Framework, RIDE does not yet support Python 3.
 
 Most other operating systems other than Windows have a recent enough Python installed by default. You can get Windows installers and plenty of other information from http://python.org. In OSX RIDE needs 32-bit Python.
 

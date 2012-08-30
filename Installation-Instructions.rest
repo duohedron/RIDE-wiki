@@ -20,9 +20,9 @@ wxPython
 
 RIDE's GUI is implemented using wxPython toolkit. Version 2.8.6 or newer with *Unicode support* is required. The ANSI version is not supported.
 
-In Ubuntu/GNOME recommended wxPython version is 2.8.10.0 or newer.
+In Ubuntu/GNOME recommended wxPython version is 2.8.12.1 or newer.
 
-In Windows 7 recommended wxPython version is 2.8.11.0 or newer.
+In Windows 7 recommended wxPython version is 2.8.12.1 or newer.
 
 For more information, installation instructions, and download packages see http://wxpython.org. On Linux you should be able to install wxPython with your package manager (e.g. on Ubuntu with `sudo apt-get install python-wxgtk2.8`). On the latest OS X versions you should have suitable wxPython version automatically, but unfortunately all RIDE features `don't yet work`__ on that platform.
 

@@ -16,4 +16,4 @@ RIDE issue tracker is in `Google Code`__.
 
 __ http://robotframework.org
 __ https://github.com/robotframework/RIDE/downloads
-__ http://code.google.com/p/robotframework-ride/issues/list]
+__ http://code.google.com/p/robotframework-ride/issues/list

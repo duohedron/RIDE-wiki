@@ -8,6 +8,42 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.50
+=========
+
+============= =========== ======== ==================================================================================================================================
+      ID          Type    Priority                                                              Summary                                                              
+============= =========== ======== ==================================================================================================================================
+`Issue 453`_  Defect      Medium   Using Comments Rows or Colorizing for a complete FOR loop does not work correctly                                                 
+`Issue 702`_  Defect      Medium   Keywords used as Run keyword variants' argument in setup/teardown are not find with find usages                                   
+`Issue 1025`_ Defect      Medium   It shows wrong Character for non-ascii characters when running                                                                    
+`Issue 1042`_ Defect      Medium   Row: Ctrl+c does not copy the whole selection                                                                                     
+`Issue 1046`_ Defect      Medium   Show a better error message if ansi version of wx is used                                                                         
+`Issue 1053`_ Defect      Medium   Test runner shows console when RIDE is started with pythonw.exe                                                                   
+`Issue 1058`_ Defect      Medium   Pasting data into Rides Edit page from a tab delimited file has issues if the lines have different numbers of delimiters / columns
+`Issue 1059`_ Defect      Medium   Library/Resource import from File Dialog on Windows fails                                                                         
+`Issue 1060`_ Defect      Medium   Can't add new resource to resource folder                                                                                         
+`Issue 260`_  Enhancement Medium   Notification about (un)successfully imported libraries, resources, variables                                                      
+`Issue 1049`_ Enhancement Medium   Standalone comments should be preserved in variable table                                                                         
+`Issue 1040`_ Defect      Low      Disabling plugin causes exception                                                                                                 
+============= =========== ======== ==================================================================================================================================
+
+.. _Issue 453: http://code.google.com/p/robotframework-ride/issues/detail?id=453
+.. _Issue 702: http://code.google.com/p/robotframework-ride/issues/detail?id=702
+.. _Issue 1025: http://code.google.com/p/robotframework-ride/issues/detail?id=1025
+.. _Issue 1042: http://code.google.com/p/robotframework-ride/issues/detail?id=1042
+.. _Issue 1046: http://code.google.com/p/robotframework-ride/issues/detail?id=1046
+.. _Issue 1053: http://code.google.com/p/robotframework-ride/issues/detail?id=1053
+.. _Issue 1058: http://code.google.com/p/robotframework-ride/issues/detail?id=1058
+.. _Issue 1059: http://code.google.com/p/robotframework-ride/issues/detail?id=1059
+.. _Issue 1060: http://code.google.com/p/robotframework-ride/issues/detail?id=1060
+.. _Issue 260: http://code.google.com/p/robotframework-ride/issues/detail?id=260
+.. _Issue 1049: http://code.google.com/p/robotframework-ride/issues/detail?id=1049
+.. _Issue 1040: http://code.google.com/p/robotframework-ride/issues/detail?id=1040
+
+Altogether 12 issues.
+
+
 RIDE 0.49
 =========
 

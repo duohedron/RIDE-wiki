@@ -8,6 +8,31 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.51
+=========
+
+============= =========== ======== ==============================================================================
+      ID          Type    Priority                                    Summary                                    
+============= =========== ======== ==============================================================================
+`Issue 92`_   Enhancement High     Cannot open non-empty directory/file unless it contains at least one test case
+`Issue 1082`_ Enhancement High     Library loading time improvements                                             
+`Issue 1069`_ Defect      Medium   Remove 'Reload Directory'                                                     
+`Issue 1072`_ Defect      Medium   Library code can kill RIDE without a trace                                    
+`Issue 1081`_ Defect      Medium   Using 'Rename Keyword' on variable name in Step cell hangs RIDE               
+`Issue 1066`_ Defect      Low      TestCaseFileEditor has no delete_rows                                         
+============= =========== ======== ==============================================================================
+
+.. _Issue 92: http://code.google.com/p/robotframework-ride/issues/detail?id=92
+.. _Issue 1082: http://code.google.com/p/robotframework-ride/issues/detail?id=1082
+.. _Issue 1069: http://code.google.com/p/robotframework-ride/issues/detail?id=1069
+.. _Issue 1072: http://code.google.com/p/robotframework-ride/issues/detail?id=1072
+.. _Issue 1081: http://code.google.com/p/robotframework-ride/issues/detail?id=1081
+.. _Issue 1066: http://code.google.com/p/robotframework-ride/issues/detail?id=1066
+
+Altogether 6 issues.
+
+
+
 RIDE 0.50
 =========
 

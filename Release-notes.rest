@@ -17,7 +17,7 @@ RIDE 0.52
 `Issue 1085`_ Defect High     RIDE does not always execute the correct test case     
 `Issue 1088`_ Defect High     'module' object has no attribute 'STARTF_USESHOWWINDOW'
 `Issue 1095`_ Defect High     Searching results in sqllite3.ProgrammingError         
-`Issue 1010`_ Defect Medium   RIDE 0.46.1 load time very slow, and timer stops       
+`Issue 1010`_ Defect High     RIDE 0.46.1 load time very slow, and timer stops       
 `Issue 1063`_ Defect Medium   RIDE doesn't show zero sized resource files            
 `Issue 1086`_ Defect Medium   Renaming keyword with $-sign fails                     
 ============= ====== ======== =======================================================

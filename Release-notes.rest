@@ -8,6 +8,20 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.52.2
+===========
+
+============= ====== ======== ==========================
+      ID       Type  Priority          Summary          
+============= ====== ======== ==========================
+`Issue 1105`_ Defect Critical New users can't start RIDE
+============= ====== ======== ==========================
+
+.. _Issue 1105: http://code.google.com/p/robotframework-ride/issues/detail?id=1105
+
+Altogether 1 issues.
+
+
 RIDE 0.52.1
 ===========
 

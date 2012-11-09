@@ -8,6 +8,22 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.52.1
+===========
+
+============= =========== ======== ========================================================================
+      ID          Type    Priority                                 Summary                                 
+============= =========== ======== ========================================================================
+`Issue 1100`_ Defect      High     Exclude will show debug prints in console                               
+`Issue 580`_  Enhancement Medium   User keyword Arguments should be presented in a more userfriendly manner
+============= =========== ======== ========================================================================
+
+.. _Issue 1100: http://code.google.com/p/robotframework-ride/issues/detail?id=1100
+.. _Issue 580: http://code.google.com/p/robotframework-ride/issues/detail?id=580
+
+Altogether 2 issues.
+
+
 RIDE 0.52
 =========
 

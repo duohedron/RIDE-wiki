@@ -8,6 +8,45 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.53
+=========
+============= =========== ======== ================================================================================
+      ID          Type    Priority                                     Summary                                     
+============= =========== ======== ================================================================================
+`Issue 1102`_ Defect      High     RIDE doesn't prompt to save changes when switching between projects             
+`Issue 875`_  Defect      Medium   test runner listener interface doesn't work on windows with iron python         
+`Issue 983`_  Defect      Medium   Unable to copy/paste from View Log screen                                       
+`Issue 998`_  Defect      Medium   Rename error when renaming KW                                                   
+`Issue 1090`_ Defect      Medium   RIDE hangs up while test execution                                              
+`Issue 1099`_ Defect      Medium   New lines in user keyword name or variable name breaks the Tree view            
+`Issue 1107`_ Defect      Medium   Exclude does not work if the directory has a __init__ file                      
+`Issue 1108`_ Defect      Medium   Editing a cell exits after a very short amount of time                          
+`Issue 1109`_ Defect      Medium   file 'dirty' status behaves badly with exclude                                  
+`Issue 1111`_ Defect      Medium   RIDE crashes if a suite file name contains newlines                             
+`Issue 1113`_ Defect      Medium   Renaming suite should update tests selected for running                         
+`Issue 816`_  Enhancement Medium   Expand All/Collapse All actions to tree nodes                                   
+`Issue 1071`_ Enhancement Medium   support change font                                                             
+`Issue 1078`_ Enhancement Medium   Caret moves to the top of text edit when change between edit- and text edit-tabs
+============= =========== ======== ================================================================================
+
+.. _Issue 1102: http://code.google.com/p/robotframework-ride/issues/detail?id=1102
+.. _Issue 875: http://code.google.com/p/robotframework-ride/issues/detail?id=875
+.. _Issue 983: http://code.google.com/p/robotframework-ride/issues/detail?id=983
+.. _Issue 998: http://code.google.com/p/robotframework-ride/issues/detail?id=998
+.. _Issue 1090: http://code.google.com/p/robotframework-ride/issues/detail?id=1090
+.. _Issue 1099: http://code.google.com/p/robotframework-ride/issues/detail?id=1099
+.. _Issue 1107: http://code.google.com/p/robotframework-ride/issues/detail?id=1107
+.. _Issue 1108: http://code.google.com/p/robotframework-ride/issues/detail?id=1108
+.. _Issue 1109: http://code.google.com/p/robotframework-ride/issues/detail?id=1109
+.. _Issue 1111: http://code.google.com/p/robotframework-ride/issues/detail?id=1111
+.. _Issue 1113: http://code.google.com/p/robotframework-ride/issues/detail?id=1113
+.. _Issue 816: http://code.google.com/p/robotframework-ride/issues/detail?id=816
+.. _Issue 1071: http://code.google.com/p/robotframework-ride/issues/detail?id=1071
+.. _Issue 1078: http://code.google.com/p/robotframework-ride/issues/detail?id=1078
+
+Altogether 14 issues.
+
+
 RIDE 0.52.2
 ===========
 

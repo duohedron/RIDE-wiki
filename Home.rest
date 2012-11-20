@@ -9,8 +9,6 @@ RIDE is a test data editor for `Robot Framework`__ test data. The latest release
   * There are also some handy [[Keyboard Shortcuts]].
   * Sometimes, there's a need to tweak how RIDE works, this is described in
     [[Settings]] page.
-  * [[Templates]] explains how to preserve external content when test data is
-    stored in HTML format.
 
 RIDE issue tracker is in `Google Code`__.
 

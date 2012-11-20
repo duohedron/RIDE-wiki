@@ -2,6 +2,9 @@
 Templates
 =========
 
+**WARNING!** This feature is deprecated and therefore not supported anymore in any way.
+=======================================================================================
+
 Introduction
 ============
 

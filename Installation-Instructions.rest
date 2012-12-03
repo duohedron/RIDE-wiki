@@ -11,20 +11,22 @@ Preconditions
 Python
 ------
 
-RIDE runs only on the regular Python, not on Jython or Iron Python. Python 2.6 is the minimum version. Notice that similarly as Robot Framework, RIDE does not yet support Python 3.
+RIDE runs only on the regular Python_, not on Jython nor Iron Python. Python 2.6 is the minimum version. Notice that similarly as Robot Framework, RIDE does not yet support Python 3.
 
-Most other operating systems other than Windows have a recent enough Python installed by default. You can get Windows installers and plenty of other information from http://python.org. In OSX RIDE needs 32-bit Python.
+Most other operating systems other than Windows have a recent enough Python installed by default. You can get Windows installers and plenty of other information from http://python.org.
+
+Notice that on OS X RIDE needs 32-bit Python.
 
 wxPython
 --------
 
-RIDE's GUI is implemented using wxPython toolkit. Version 2.8.6 or newer with *Unicode support* is required. The ANSI version is not supported.
+RIDE's GUI is implemented using wxPython_ toolkit. Only **wxPython 2.8.12.1 with Unicode support is officially supported**. Possible new releases in wxPython 2.8 series ought to work fine too, but wxPython 2.9 is still considered unstable.
 
-In Ubuntu/GNOME recommended wxPython version is 2.8.12.1 or newer.
+*On Windows* you can download an appropriate installer from `wxPython download page <http://wxpython.org/download.php#stable>`. For more information about the installation see http://wxpython.org pages in general.
 
-In Windows 7 recommended wxPython version is 2.8.12.1 or newer.
+*On Linux* you should be able to install wxPython with your package manager. For example, on Debian based systems such as Ubuntu running `sudo apt-get install python-wxgtk2.8` ought to be enough.
 
-For more information, installation instructions, and download packages see http://wxpython.org. On Linux you should be able to install wxPython with your package manager (e.g. on Ubuntu with `sudo apt-get install python-wxgtk2.8`). On the latest OS X versions you should have suitable wxPython version automatically, but unfortunately all RIDE features `don't yet work`__ on that platform.
+*On OS X* you can try wxPython 2.9 because it supports OS X better than 2.8 releases. On latest OS X versions you should have suitable wxPython version installed by default, but unfortunately all RIDE features `don't yet work`__ on that platform.
 
 Robot Framework
 ---------------
@@ -97,6 +99,8 @@ Running RIDE from git clone
 
 To update your clone, run `git pull`
 
+.. _python: http://python.org
+.. _wxPython: http://wxpython.org
 __ http://code.google.com/p/robotframework-ride/issues/list?q=label:OS-OSX
 __ https://github.com/robotframework/RIDE/downloads
 __ http://pypi.python.org/pypi/setuptools

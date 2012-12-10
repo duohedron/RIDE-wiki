@@ -8,6 +8,57 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.54
+=========
+============= =========== ======== ==============================================================================================================
+      ID          Type    Priority                                                    Summary                                                    
+============= =========== ======== ==============================================================================================================
+`Issue 32`_   Enhancement Critical Searching tests using name, documentation or tags                                                             
+`Issue 1124`_ Defect      High     Font size displayed does not match font size set                                                              
+`Issue 1131`_ Defect      High     Multiline documentation should be formatted in multiple rows                                                  
+`Issue 1141`_ Enhancement High     Document and notify at start-up that wxPython 2.8.12.1 is the minimum supported version                       
+`Issue 1004`_ Defect      Medium   popup help interferes with editing/copying/pasting of cells                                                   
+`Issue 1064`_ Defect      Medium   Directory init file library imports fail on linux                                                             
+`Issue 1080`_ Defect      Medium   'Find Where Used' on for variable name with dashes excludes items after the dash                              
+`Issue 1092`_ Defect      Medium   "File Changed On Disk" keeps poping up repeatedly even after a deleted suite has been removed from the project
+`Issue 1101`_ Defect      Medium   Green Dot Indication Isn't Visible for tests' with '.'                                                        
+`Issue 1110`_ Defect      Medium   Ride crashes regularly in Ubuntu 12.04                                                                        
+`Issue 1118`_ Defect      Medium   Using tab character in text editor does not work                                                              
+`Issue 1119`_ Defect      Medium   Deleting resource file and imports throws an exception                                                        
+`Issue 1122`_ Defect      Medium   RIDE Preferences Dialog shows 40 spaces, should be 4                                                          
+`Issue 1138`_ Defect      Medium   Hot key "Control + A" does not work under windows os                                                          
+`Issue 1144`_ Defect      Medium   Failures in importing libraries (e.g. `Remote` library) can hang RIDE                                         
+`Issue 198`_  Enhancement Medium   Ride should have links to help documents in the "Help"  menu.                                                 
+`Issue 1121`_ Enhancement Medium   Add keyword search to toolbar                                                                                 
+`Issue 1132`_ Enhancement Medium   Installer should optionally create shortcuts on windows                                                       
+`Issue 1133`_ Enhancement Medium   Installer should check that wx exists                                                                         
+`Issue 1026`_ Defect      Low      Pressing Ctrl+D when cell editor open will remove two rows in Linux                                           
+============= =========== ======== ==============================================================================================================
+
+.. _Issue 32: http://code.google.com/p/robotframework-ride/issues/detail?id=32
+.. _Issue 1124: http://code.google.com/p/robotframework-ride/issues/detail?id=1124
+.. _Issue 1131: http://code.google.com/p/robotframework-ride/issues/detail?id=1131
+.. _Issue 1141: http://code.google.com/p/robotframework-ride/issues/detail?id=1141
+.. _Issue 1004: http://code.google.com/p/robotframework-ride/issues/detail?id=1004
+.. _Issue 1064: http://code.google.com/p/robotframework-ride/issues/detail?id=1064
+.. _Issue 1080: http://code.google.com/p/robotframework-ride/issues/detail?id=1080
+.. _Issue 1092: http://code.google.com/p/robotframework-ride/issues/detail?id=1092
+.. _Issue 1101: http://code.google.com/p/robotframework-ride/issues/detail?id=1101
+.. _Issue 1110: http://code.google.com/p/robotframework-ride/issues/detail?id=1110
+.. _Issue 1118: http://code.google.com/p/robotframework-ride/issues/detail?id=1118
+.. _Issue 1119: http://code.google.com/p/robotframework-ride/issues/detail?id=1119
+.. _Issue 1122: http://code.google.com/p/robotframework-ride/issues/detail?id=1122
+.. _Issue 1138: http://code.google.com/p/robotframework-ride/issues/detail?id=1138
+.. _Issue 1144: http://code.google.com/p/robotframework-ride/issues/detail?id=1144
+.. _Issue 198: http://code.google.com/p/robotframework-ride/issues/detail?id=198
+.. _Issue 1121: http://code.google.com/p/robotframework-ride/issues/detail?id=1121
+.. _Issue 1132: http://code.google.com/p/robotframework-ride/issues/detail?id=1132
+.. _Issue 1133: http://code.google.com/p/robotframework-ride/issues/detail?id=1133
+.. _Issue 1026: http://code.google.com/p/robotframework-ride/issues/detail?id=1026
+
+Altogether 20 issues.
+
+
 RIDE 0.53
 =========
 ============= =========== ======== ================================================================================

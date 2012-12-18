@@ -8,6 +8,46 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+============= =========== ======== ==========================================================================================================
+      ID          Type    Priority                                                  Summary                                                  
+============= =========== ======== ==========================================================================================================
+`Issue 1135`_ Defect      High     Backwards going resource imports sometimes fail (Are shown in red color and resources are shown as unused)
+`Issue 1155`_ Defect      High     "Search" button of "Search Tests" dialog does nothing                                                     
+`Issue 1164`_ Defect      High     Renaming keyword with embedded arguments fails                                                            
+`Issue 1147`_ Defect      Medium   Screenshot library prevents RIDE from closing completely                                                  
+`Issue 1154`_ Defect      Medium   Search Keywords get error and never stops refreshing the screen                                           
+`Issue 1157`_ Defect      Medium   HTML format change does not work                                                                          
+`Issue 1159`_ Defect      Medium   Comments are not handled correctly in FOR loops                                                           
+`Issue 1160`_ Defect      Medium   enabling/disabling plugins does not work                                                                  
+`Issue 1161`_ Defect      Medium   RIDE freezes w/ 'DocumentationController' object has no attribute 'replace_keyword'                       
+`Issue 1162`_ Defect      Medium   Editing in text editor is not possible if there is a comment starting with two hash characters            
+`Issue 1166`_ Defect      Medium   For loop header row move throws an exception                                                              
+`Issue 1117`_ Enhancement Medium   Support wildcards in excludes                                                                             
+`Issue 1137`_ Enhancement Medium   Clean-up menus, toolbars, etc.                                                                            
+`Issue 1150`_ Enhancement Medium   Excludes editable in Preferences                                                                          
+`Issue 1146`_ Defect      Low      global variable value set problem                                                                         
+`Issue 1167`_ Defect      Low      Test suite files starting with underscore cause parse error                                               
+============= =========== ======== ==========================================================================================================
+
+.. _Issue 1135: http://code.google.com/p/robotframework-ride/issues/detail?id=1135
+.. _Issue 1155: http://code.google.com/p/robotframework-ride/issues/detail?id=1155
+.. _Issue 1164: http://code.google.com/p/robotframework-ride/issues/detail?id=1164
+.. _Issue 1147: http://code.google.com/p/robotframework-ride/issues/detail?id=1147
+.. _Issue 1154: http://code.google.com/p/robotframework-ride/issues/detail?id=1154
+.. _Issue 1157: http://code.google.com/p/robotframework-ride/issues/detail?id=1157
+.. _Issue 1159: http://code.google.com/p/robotframework-ride/issues/detail?id=1159
+.. _Issue 1160: http://code.google.com/p/robotframework-ride/issues/detail?id=1160
+.. _Issue 1161: http://code.google.com/p/robotframework-ride/issues/detail?id=1161
+.. _Issue 1162: http://code.google.com/p/robotframework-ride/issues/detail?id=1162
+.. _Issue 1166: http://code.google.com/p/robotframework-ride/issues/detail?id=1166
+.. _Issue 1117: http://code.google.com/p/robotframework-ride/issues/detail?id=1117
+.. _Issue 1137: http://code.google.com/p/robotframework-ride/issues/detail?id=1137
+.. _Issue 1150: http://code.google.com/p/robotframework-ride/issues/detail?id=1150
+.. _Issue 1146: http://code.google.com/p/robotframework-ride/issues/detail?id=1146
+.. _Issue 1167: http://code.google.com/p/robotframework-ride/issues/detail?id=1167
+
+Altogether 16 issues.
+
 RIDE 0.54
 =========
 ============= =========== ======== ==============================================================================================================

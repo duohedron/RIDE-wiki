@@ -2,11 +2,11 @@
 Release notes
 =============
 
+The latest releases are available from the `download page`_ on Google Code. Older release notes are [[archived|Old Release Notes]] on a separate page.
+
 .. contents::
   :local:
   :depth: 1
-
-The latest releases are available from the `download page`_ on Google Code. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
 RIDE 0.55
 =========

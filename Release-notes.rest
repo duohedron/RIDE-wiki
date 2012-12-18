@@ -6,7 +6,7 @@ Release notes
   :local:
   :depth: 1
 
-The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
+The latest releases are available from the `download page`_ on Google Code. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
 RIDE 0.55
 =========
@@ -584,4 +584,4 @@ Some other improvements and bug fixes are included, all of which are listed in t
 
 Altogether 9 issues.
 
-__ https://github.com/robotframework/RIDE/downloads
+.. _download page: http://code.google.com/p/robotframework-ride/downloads/list

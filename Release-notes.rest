@@ -8,6 +8,8 @@ Release notes
 
 The latest releases are available from the `download page`__. Older release notes are [[archived|Old Release Notes]] on a separate page.
 
+RIDE 0.55
+=========
 ============= =========== ======== ==========================================================================================================
       ID          Type    Priority                                                  Summary                                                  
 ============= =========== ======== ==========================================================================================================

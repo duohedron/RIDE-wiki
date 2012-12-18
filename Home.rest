@@ -1,4 +1,4 @@
-RIDE is a test data editor for `Robot Framework`__ test data. The latest releases are available from the `Download page`__
+RIDE is a test data editor for `Robot Framework`__ test data. The latest releases are available from the `Download page`__ in Google Code.
 
   * Please read the [[Installation Instructions]] to get smoothly started.
   * [[Release Notes]] contains the list of enhancements/bug fixes per
@@ -10,8 +10,8 @@ RIDE is a test data editor for `Robot Framework`__ test data. The latest release
   * Sometimes, there's a need to tweak how RIDE works, this is described in
     [[Settings]] page.
 
-RIDE issue tracker is in `Google Code`__.
+RIDE `issue tracker`__ is in Google Code.
 
 __ http://robotframework.org
-__ https://github.com/robotframework/RIDE/downloads
+__ http://code.google.com/p/robotframework-ride/downloads/list
 __ http://code.google.com/p/robotframework-ride/issues/list

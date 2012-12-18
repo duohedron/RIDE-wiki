@@ -94,4 +94,4 @@ To update your clone, run ``git pull`` in the `RIDE` directory.
 .. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
 .. _git: http://git-scm.com/
 .. _paver: https://github.com/paver/paver
-.. _download page: https://github.com/robotframework/RIDE/downloads
+.. _download page: http://code.google.com/p/robotframework-ride/downloads/list

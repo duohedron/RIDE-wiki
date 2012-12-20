@@ -8,6 +8,24 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+RIDE 1.0
+========
+============= =========== ======== =======================================================================================
+      ID          Type    Priority                                         Summary                                        
+============= =========== ======== =======================================================================================
+`Issue 1170`_ Defect      Medium   Keyword cell information threw an exception when External Resources selected from tree 
+`Issue 1173`_ Defect      Medium   Test cases with the same name are marked wrongly in the tree with test execution status
+`Issue 1174`_ Defect      Medium   Should show old wxpython dialog with really old wxpython                               
+`Issue 1169`_ Enhancement Medium   Update status to stable in pavement                                                    
+============= =========== ======== =======================================================================================
+
+.. _Issue 1170: http://code.google.com/p/robotframework-ride/issues/detail?id=1170
+.. _Issue 1173: http://code.google.com/p/robotframework-ride/issues/detail?id=1173
+.. _Issue 1174: http://code.google.com/p/robotframework-ride/issues/detail?id=1174
+.. _Issue 1169: http://code.google.com/p/robotframework-ride/issues/detail?id=1169
+
+Altogether 4 issues.
+
 RIDE 0.55
 =========
 ============= =========== ======== ==========================================================================================================

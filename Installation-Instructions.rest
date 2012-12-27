@@ -13,7 +13,7 @@ Python
 
 RIDE runs only on the regular Python_, not on Jython nor IronPython. **Python 2.6** is the minimum version. Notice that similarly as Robot Framework, RIDE does not yet support Python 3. Notice also that on OS X RIDE requires 32-bit Python version.
 
-Most other operating systems other than Windows have a recent enough Python installed by default. You can find Windows installers and plenty of other information from http://python.org.
+Most other operating systems than Windows have a recent enough Python installed by default. You can find Windows installers and plenty of other information from http://python.org.
 
 wxPython
 --------

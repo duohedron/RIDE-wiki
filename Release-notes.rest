@@ -8,6 +8,23 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+RIDE 1.0.1
+==========
+============= =========== ======== =======================================================
+      ID          Type    Priority                         Summary                        
+============= =========== ======== =======================================================
+`Issue 1179`_ Defect      Medium   Test execution fails when starting from scratch        
+`Issue 1187`_ Enhancement Medium   Update internal Robot to 2.7.6                         
+`Issue 1180`_ Defect      Low      suite or resource file not fully renamed if you tab off
+============= =========== ======== =======================================================
+
+.. _Issue 1179: http://code.google.com/p/robotframework-ride/issues/detail?id=1179
+.. _Issue 1187: http://code.google.com/p/robotframework-ride/issues/detail?id=1187
+.. _Issue 1180: http://code.google.com/p/robotframework-ride/issues/detail?id=1180
+
+Altogether 3 issues.
+
+
 RIDE 1.0
 ========
 ============= =========== ======== =======================================================================================

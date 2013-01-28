@@ -34,7 +34,14 @@ Robot Framework
 
 If RIDE is used only to edit test cases, Robot Framework does not need to
 installed at all. However, the [[Test runner plugin]] requires Robot Framework
-to be separately installed.
+to be `separately installed`__.
+
+.. note:: Directories added to `PATH` as part of the Robot Framework installation must
+          not contain quotes. Otherwise RIDE may not be able to execute tests due to
+          a `bug in Python`__.
+
+__ http://code.google.com/p/robotframework/wiki/Installation
+__ http://bugs.python.org/issue17023
 
 Installation
 ============

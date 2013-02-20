@@ -8,6 +8,34 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+RIDE 1.1
+==========
+
+============= ============= ======== =========================================================================================
+      ID           Type     Priority                                          Summary                                         
+============= ============= ======== =========================================================================================
+`Issue 1134`_ Enhancement   Critical Mass Tag editor                                                                          
+`Issue 1200`_ Defect        High     RIDE starts but it is not able to open project files and closes again                    
+`Issue 228`_  Enhancement   High     Debugging executed tests                                                                 
+`Issue 1193`_ Enhancement   High     Syntax colorization for Text Edit                                                        
+`Issue 742`_  Enhancement   Medium   Shortcut for moving to next line in grid editor                                          
+`Issue 1198`_ Enhancement   Medium   Add pause on failure option to test runner                                               
+`Issue 1188`_ Documentation Medium   Document that running tests does not work if `C:\Python27\Scripts` is in PATH with quotes
+`Issue 1202`_ Defect        Low      error importing listener when running Python in optimized mode                           
+============= ============= ======== =========================================================================================
+
+.. _Issue 1134: http://code.google.com/p/robotframework-ride/issues/detail?id=1134
+.. _Issue 1200: http://code.google.com/p/robotframework-ride/issues/detail?id=1200
+.. _Issue 228: http://code.google.com/p/robotframework-ride/issues/detail?id=228
+.. _Issue 1193: http://code.google.com/p/robotframework-ride/issues/detail?id=1193
+.. _Issue 742: http://code.google.com/p/robotframework-ride/issues/detail?id=742
+.. _Issue 1198: http://code.google.com/p/robotframework-ride/issues/detail?id=1198
+.. _Issue 1188: http://code.google.com/p/robotframework-ride/issues/detail?id=1188
+.. _Issue 1202: http://code.google.com/p/robotframework-ride/issues/detail?id=1202
+
+Altogether 8 issues.
+
+
 RIDE 1.0.1
 ==========
 ============= =========== ======== =======================================================

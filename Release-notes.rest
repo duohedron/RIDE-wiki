@@ -8,6 +8,33 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+RIDE 1.2
+========
+
+============= =========== ======== ==================================================================================
+      ID          Type    Priority                                      Summary                                      
+============= =========== ======== ==================================================================================
+`Issue 1248`_ Defect      High     Can not open RIDE by error: sqlite3.OperationalError: unable to open database file
+`Issue 1207`_ Defect      Medium   RIDE 1.1 - selecting ONE test case, will run also following test cases            
+`Issue 1208`_ Defect      Medium   Message console is not showing anything when running a very fast test case        
+`Issue 1259`_ Defect      Medium   saving txt file in text edit mode automatically scrolls to the top (l             
+`Issue 1263`_ Defect      Medium   "Arguments" textbox turns red when inserting --runfailed option                   
+`Issue 1233`_ Enhancement Medium   Use keyboard shortcuts in more places                                             
+`Issue 1265`_ Enhancement Medium   Double clicking Variable icon on tree should open variable dialog                 
+`Issue 1224`_ Enhancement Low      difficult to read the arguments in the Run panel when they are considered invalid 
+============= =========== ======== ==================================================================================
+
+.. _Issue 1248: http://code.google.com/p/robotframework-ride/issues/detail?id=1248
+.. _Issue 1207: http://code.google.com/p/robotframework-ride/issues/detail?id=1207
+.. _Issue 1208: http://code.google.com/p/robotframework-ride/issues/detail?id=1208
+.. _Issue 1259: http://code.google.com/p/robotframework-ride/issues/detail?id=1259
+.. _Issue 1263: http://code.google.com/p/robotframework-ride/issues/detail?id=1263
+.. _Issue 1233: http://code.google.com/p/robotframework-ride/issues/detail?id=1233
+.. _Issue 1265: http://code.google.com/p/robotframework-ride/issues/detail?id=1265
+.. _Issue 1224: http://code.google.com/p/robotframework-ride/issues/detail?id=1224
+
+Altogether 8 issues.
+
 RIDE 1.1
 ==========
 

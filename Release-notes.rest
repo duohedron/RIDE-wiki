@@ -10,11 +10,11 @@ The latest releases are available from the `download page`_ on Google Code. Olde
 
 RIDE 1.2
 ========
-
 ============= =========== ======== ==================================================================================
       ID          Type    Priority                                      Summary                                      
 ============= =========== ======== ==================================================================================
 `Issue 1248`_ Defect      High     Can not open RIDE by error: sqlite3.OperationalError: unable to open database file
+`Issue 1270`_ Defect      High     Import library xml functionality                                                  
 `Issue 1207`_ Defect      Medium   RIDE 1.1 - selecting ONE test case, will run also following test cases            
 `Issue 1208`_ Defect      Medium   Message console is not showing anything when running a very fast test case        
 `Issue 1259`_ Defect      Medium   saving txt file in text edit mode automatically scrolls to the top (l             
@@ -25,6 +25,7 @@ RIDE 1.2
 ============= =========== ======== ==================================================================================
 
 .. _Issue 1248: http://code.google.com/p/robotframework-ride/issues/detail?id=1248
+.. _Issue 1270: http://code.google.com/p/robotframework-ride/issues/detail?id=1270
 .. _Issue 1207: http://code.google.com/p/robotframework-ride/issues/detail?id=1207
 .. _Issue 1208: http://code.google.com/p/robotframework-ride/issues/detail?id=1208
 .. _Issue 1259: http://code.google.com/p/robotframework-ride/issues/detail?id=1259
@@ -33,7 +34,7 @@ RIDE 1.2
 .. _Issue 1265: http://code.google.com/p/robotframework-ride/issues/detail?id=1265
 .. _Issue 1224: http://code.google.com/p/robotframework-ride/issues/detail?id=1224
 
-Altogether 8 issues.
+Altogether 9 issues.
 
 RIDE 1.1
 ==========

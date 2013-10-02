@@ -8,6 +8,25 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+RIDE 1.2.1
+==========
+
+============= =========== ======== =============================================================================================
+      ID          Type    Priority                                            Summary                                           
+============= =========== ======== =============================================================================================
+`Issue 1285`_ Defect      High     Edit directory init file in Text Edit can not be applied                                     
+`Issue 1281`_ Defect      Medium    unable to import String library 2.8.1 to RIDE                                               
+`Issue 1283`_ Defect      Medium   In foder tree, Ride does not open a fodler when it is double clicked                         
+`Issue 1284`_ Enhancement Medium   ride1.2 not work well with robot 2.8.1 when search keywords for new added keywords in BuiltIn
+============= =========== ======== =============================================================================================
+
+.. _Issue 1285: http://code.google.com/p/robotframework-ride/issues/detail?id=1285
+.. _Issue 1281: http://code.google.com/p/robotframework-ride/issues/detail?id=1281
+.. _Issue 1283: http://code.google.com/p/robotframework-ride/issues/detail?id=1283
+.. _Issue 1284: http://code.google.com/p/robotframework-ride/issues/detail?id=1284
+
+Altogether 4 issues.
+
 RIDE 1.2
 ========
 ============= =========== ======== ==================================================================================

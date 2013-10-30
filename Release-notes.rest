@@ -8,6 +8,26 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+RIDE 1.2.2
+==========
+
+============= =========== ======== ==================================================================================
+      ID          Type    Priority                                      Summary                                      
+============= =========== ======== ==================================================================================
+`Issue 1293`_ Enhancement High     Improve start speed of robot inside Ride.                                         
+`Issue 1282`_ Defect      Medium   Pickle memory leak in TestRunner plugin                                           
+`Issue 1292`_ Enhancement Medium   Add "Select only passed Tests" option                                             
+`Issue 1294`_ Defect      Low      Changed testcase form value is not saved, if the cursor is left in same form field
+============= =========== ======== ==================================================================================
+
+.. _Issue 1293: http://code.google.com/p/robotframework-ride/issues/detail?id=1293
+.. _Issue 1282: http://code.google.com/p/robotframework-ride/issues/detail?id=1282
+.. _Issue 1292: http://code.google.com/p/robotframework-ride/issues/detail?id=1292
+.. _Issue 1294: http://code.google.com/p/robotframework-ride/issues/detail?id=1294
+
+Altogether 4 issues.
+
+
 RIDE 1.2.1
 ==========
 

@@ -26,7 +26,7 @@ RIDE's GUI is implemented using wxPython_ toolkit. Only **wxPython 2.8.12.1** wi
 
 *On OS X* you can try wxPython 2.9 because it supports OS X better than 2.8 releases. On latest OS X versions you should have suitable wxPython version installed by default, but unfortunately all RIDE features `do not yet work`__ on that platform.
 
-__ http://wxpython.org/download.php#stable>
+__ http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/
 __ http://code.google.com/p/robotframework-ride/issues/list?q=label:OS-OSX
 
 Robot Framework

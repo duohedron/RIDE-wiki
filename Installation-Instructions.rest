@@ -77,7 +77,8 @@ Start-up
 After a successful installation RIDE can be started from the command line by running ``ride.py``. Alternatively you can specify a file or directory to open as an argument like ``ride.py path/to/tests``.
 Starting from RIDE 0.54, you can also create a desktop shortcut during installation on Windows.
 
-On Windows running ``ride.py`` requires having ``<PythonInstallationDir>\Scripts`` on PATH. If `pybot` command to run tests with Robot Framework works you should be fine. If it does not, see `Robot Framework installation instructions`__ for more information about setting PATH.
+On Windows running ``ride.py`` requires having ``<PythonInstallationDir>\Scripts`` on PATH. If `pybot` command to run tests with Robot Framework works you should be fine. If it does not, see 
+`Robot Framework installation instructions`__ for more information about setting PATH.
 
 If you use Cygwin on Windows, you may need to fix the shebang line in `ride.py` manually before running it.
 

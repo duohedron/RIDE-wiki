@@ -8,6 +8,22 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+
+RIDE 1.2.3
+==========
+
+============= =========== ======== ===================================================================================================
+      ID          Type    Priority                                               Summary                                              
+============= =========== ======== ===================================================================================================
+`Issue 1290`_ Defect      Medium   RIDE runs not selected (with checkboxes) tests                                                     
+`Issue 1306`_ Defect      Medium   [RIDE 1.2.2 running on Python 2.7.5.] - Unable to insert cell in RIDE, if the TC contains FOR loop.
+`Issue 1307`_ Enhancement Medium   Possibility to create new folder with right click                                                  
+============= =========== ======== ===================================================================================================
+
+.. _Issue 1290: http://code.google.com/p/robotframework-ride/issues/detail?id=1290
+.. _Issue 1306: http://code.google.com/p/robotframework-ride/issues/detail?id=1306
+.. _Issue 1307: http://code.google.com/p/robotframework-ride/issues/detail?id=1307
+
 RIDE 1.2.2
 ==========
 

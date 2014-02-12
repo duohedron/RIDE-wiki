@@ -8,6 +8,7 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+
 RIDE 1.3
 =========
 

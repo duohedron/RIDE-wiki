@@ -8,6 +8,22 @@ The latest releases are available from the `download page`_ on Google Code. Olde
   :local:
   :depth: 1
 
+RIDE 1.3
+=========
+
+============= =========== ======== ========================================================================================
+      ID          Type    Priority                                         Summary                                         
+============= =========== ======== ========================================================================================
+`Issue 1326`_ Defect      High     If wxpython is not installed or correct version, point user to the correct download page
+`Issue 1182`_ Enhancement High     Support for `*.robot` files                                                             
+`Issue 1325`_ Enhancement Medium   Autocomplete: Support variable completion without ${ or @{ at the start                 
+============= =========== ======== ========================================================================================
+
+.. _Issue 1326: http://code.google.com/p/robotframework-ride/issues/detail?id=1326
+.. _Issue 1182: http://code.google.com/p/robotframework-ride/issues/detail?id=1182
+.. _Issue 1325: http://code.google.com/p/robotframework-ride/issues/detail?id=1325
+
+Altogether 3 issues.
 
 RIDE 1.2.3
 ==========

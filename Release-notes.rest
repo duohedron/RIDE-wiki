@@ -26,7 +26,7 @@ RIDE 1.3
 
 Altogether 3 issues.
 
-.. _ride-123:
+.. _ride-1-2-3:
 
 RIDE 1.2.3
 ==========

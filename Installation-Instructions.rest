@@ -20,11 +20,11 @@ wxPython
 
 RIDE's GUI is implemented using wxPython_ toolkit. Only **wxPython 2.8.12.1** with Unicode support is officially supported. Possible new releases in wxPython 2.8 series ought to work fine too, but wxPython 2.9 is still considered unstable.
 
-*On Windows* you can download an appropriate installer from `wxPython download page`__. For more information about the installation see http://wxpython.org pages in general.
+**On Windows** you can download an appropriate installer from `wxPython download page`__. For more information about the installation see http://wxpython.org pages in general.
 
-*On Linux* you should be able to install wxPython with your package manager. For example, on Debian based systems such as Ubuntu running ``sudo apt-get install python-wxgtk2.8`` ought to be enough.
+**On Linux*Ä you should be able to install wxPython with your package manager. For example, on Debian based systems such as Ubuntu running ``sudo apt-get install python-wxgtk2.8`` ought to be enough.
 
-*On OS X* you can try wxPython 2.9 because it supports OS X better than 2.8 releases. On latest OS X versions you should have suitable wxPython version installed by default, but unfortunately all RIDE features 
+**On OS X** you can try wxPython 2.9 because it supports OS X better than 2.8 releases. On latest OS X versions you should have suitable wxPython version installed by default, but unfortunately all RIDE features 
 `do not yet work`__ on that platform.
 
 __ http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/
@@ -52,15 +52,15 @@ RIDE is distributed as separate installation packages for Windows and for other 
 Installing from source
 ----------------------
 
-  * Get the source distribution.
-  * Extract it e.g. with WinZip on Windows or with ``tar xzvf robotide-<version>.tar.gz`` on Linux or OS X.
-  * Go to the created directory and run ``python setup.py install``. Notice that on Linux or OS X you typically need to prefix the command with ``sudo``.
+* `Get the source distribution`_.
+* Extract it e.g. with WinZip on Windows or with ``tar xzvf robotframework-ride-<version>.tar.gz`` on Linux or OS X.
+* Go to the created directory and run ``python setup.py install``. Notice that on Linux or OS X you typically need to prefix the command with ``sudo``.
 
 Using Windows installer
 -----------------------
 
-  * Get Windows installer.
-  * Double click the installer and click through the opened GUI.
+* `Get Windows installer`_.
+* Double click the installer and click through the opened GUI.
 
 Using `pip` or `easy_install`
 -----------------------------
@@ -103,4 +103,7 @@ To update your clone, run ``git pull`` in the `RIDE` directory.
 .. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
 .. _git: http://git-scm.com/
 .. _paver: https://github.com/paver/paver
-.. _download page: http://code.google.com/p/robotframework-ride/downloads/list
+
+.. _download page:
+.. _Get the source distribution:
+.. _Get Windows installer: https://pypi.python.org/pypi/robotframework-ride

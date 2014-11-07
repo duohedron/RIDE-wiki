@@ -17,4 +17,6 @@ them.
 Installing Plugins
 ------------------
 
-See "Finding Plugins" in the [Plugin API documentation](https://github.com/robotframework/RIDE/blob/master/src/robotide/pluginapi/__init__.py).
+See "Finding Plugins" in the `Plugin API documentation`__.
+
+__ https://github.com/robotframework/RIDE/blob/master/src/robotide/pluginapi/__init__.py

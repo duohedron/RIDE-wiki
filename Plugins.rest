@@ -13,3 +13,8 @@ Managing Plugins
 Selecting `Tools|Manage Plugins` from main menu opens a Plugin manager. The
 available plugins are listed, and there's a possibility to activate/deactivate
 them.
+
+Installing Plugins
+------------------
+
+See "Finding Plugins" in the [Plugin API documentation](https://github.com/robotframework/RIDE/blob/master/src/robotide/pluginapi/__init__.py).

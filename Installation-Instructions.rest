@@ -18,17 +18,16 @@ Most other operating systems than Windows have a recent enough Python installed 
 wxPython
 --------
 
-RIDE's GUI is implemented using wxPython_ toolkit. Only **wxPython 2.8.12.1** with Unicode support is officially supported. Possible new releases in wxPython 2.8 series ought to work fine too, but wxPython 2.9 is still considered unstable.
+RIDE's GUI is implemented using wxPython_ toolkit. Only **wxPython 2.8.12.1** with Unicode support is officially supported. Possible new releases in wxPython 2.8 series ought to work fine too. wxPython 3.0 support is one of the priorities for future development. 
 
-**On Windows** you can download an appropriate installer from `wxPython download page`__. For more information about the installation see http://wxpython.org pages in general.
+**On Windows** you can download an appropriate installer from `wxPython download page`_. For more information about the installation see http://wxpython.org pages in general.
 
-**On Linux*Ä you should be able to install wxPython with your package manager. For example, on Debian based systems such as Ubuntu running ``sudo apt-get install python-wxgtk2.8`` ought to be enough.
+**On Linux** you should be able to install wxPython with your package manager. For example, on Debian based systems such as Ubuntu running ``sudo apt-get install python-wxgtk2.8`` ought to be enough.
 
-**On OS X** you can try wxPython 2.9 because it supports OS X better than 2.8 releases. On latest OS X versions you should have suitable wxPython version installed by default, but unfortunately all RIDE features 
-`do not yet work`__ on that platform.
+**On OS X** you should use wxPython binaries found from the `wxPython download page`_.
 
-__ http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/
-__ http://code.google.com/p/robotframework-ride/issues/list?q=label:OS-OSX
+
+
 
 Robot Framework
 ---------------
@@ -103,6 +102,7 @@ To update your clone, run ``git pull`` in the `RIDE` directory.
 .. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
 .. _git: http://git-scm.com/
 .. _paver: https://github.com/paver/paver
+.. _wxPython download page: http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/
 
 .. _download page:
 .. _Get the source distribution:

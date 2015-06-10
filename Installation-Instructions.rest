@@ -24,7 +24,13 @@ RIDE's GUI is implemented using wxPython_ toolkit. Only **wxPython 2.8.12.1** wi
 
 **On Linux** you should be able to install wxPython with your package manager. For example, on Debian based systems such as Ubuntu running ``sudo apt-get install python-wxgtk2.8`` ought to be enough.
 
-**On OS X** you should use wxPython binaries found from the `wxPython download page`_.
+**On OS X** you should use wxPython binaries found from the `wxPython download page`_. wxPython2.8 only has 32 bit build available, so Python *must* be run in 32-bit mode also. This can be done globally by running:
+
+    > defaults write com.apple.versioner.python Prefer-32-Bit -bool yes
+
+or just for the RIDE execution:
+
+    > VERSIONER_PYTHON_PREFER_32_BIT=yes ride.py
 
 
 

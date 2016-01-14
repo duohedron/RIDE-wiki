@@ -1,6 +1,18 @@
-=============
-Release notes
-=============
+========================================
+The latest releases can be found `here`_
+========================================
+
+.. _here: https://github.com/robotframework/RIDE/releases
+
+Information below is historical, and the issue links were broken when code was migrated from Google Code to GitHub.
+
+
+
+
+
+========================
+Deprecated Release notes
+========================
 
 The latest releases are available from the `download page`_ on Google Code. Older release notes are [[archived|Old Release Notes]] on a separate page.
 

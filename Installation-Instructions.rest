@@ -93,13 +93,68 @@ __ http://code.google.com/p/robotframework/wiki/Installation#Setting_PATH
 Using latest development version
 ================================
 
-To test the latest enhancements or fixes, you can easily checkout the latest RIDE sources from its version control system and run it directly from there. As a precondition you need to have Git_ and Paver_ installed. After that, just run the following commands to clone RIDE's repository and start the latest version::
+To test the latest enhancements or fixes, you can easily checkout the latest RIDE sources from its version control system and run it directly from there. As a precondition you need to have Git_ and Invoke_ installed. After that, just run the following commands to clone RIDE's repository and start the latest version::
 
     git clone https://github.com/robotframework/RIDE.git
     cd RIDE
-    paver run [datasource]
+    invoke devel [datasource]
 
 To update your clone, run ``git pull`` in the `RIDE` directory.
+
+Other development options
+-------------------------
+
+You may see what options invoke_ provides with::
+
+    invoke --help
+    Usage: inv[oke] [--core-opts] task1 [--task1-opts] ... taskN [--taskN-opts]
+    
+    Core options:
+    
+      --complete                       Print tab-completion candidates for given
+                                       parse remainder.
+      --hide=STRING                    Set default value of run()'s 'hide' kwarg.
+      --no-dedupe                      Disable task deduplication.
+      --write-pyc                      Enable creation of .pyc files.
+      -c STRING, --collection=STRING   Specify collection name to load.
+      -d, --debug                      Enable debug output.
+      -e, --echo                       Echo executed commands before running.
+      -f STRING, --config=STRING       Runtime configuration file to use.
+      -h [STRING], --help[=STRING]     Show core or per-task help and exit.
+      -l, --list                       List available tasks.
+      -p, --pty                        Use a pty when executing shell commands.
+      -r STRING, --root=STRING         Change root directory used for finding task
+                                       modules.
+      -V, --version                    Show version and exit.
+      -w, --warn-only                  Warn, instead of failing, when shell
+                                       commands fail.
+
+
+
+These are the possible tasks for our RIDE project::
+
+    invoke --list
+    Available tasks:
+    
+      clean                  Clean bytecode files and remove `dist` and `build`
+                             directories.
+      deps                   Fetch and install development dependencies.
+      devel                  Start development version of RIDE.
+      generate_big_project   Generate big test data project to help perf testing.
+      install                Install development version and dependencies.
+      random_test            Use rtest go_find_bugs.py to randomly test RIDE API.
+      register               Register current version to Python package index.
+      release_notes          Download and format issues in markdown format.
+      sdist                  Creates source distribution with bundled dependencies.
+      test                   Run unit tests.
+      update_robot           Update robot framework to specified commit or tag.
+      version                Set `version.py` to given version.
+      wininst                Creates Windows installer with bundled dependencies.
+
+Current version of invoke_ is::
+
+   invoke --version
+   Invoke 0.12.2
 
 
 .. _python: http://python.org
@@ -107,7 +162,7 @@ To update your clone, run ``git pull`` in the `RIDE` directory.
 .. _pip: http://www.pip-installer.org
 .. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
 .. _git: http://git-scm.com/
-.. _paver: https://github.com/paver/paver
+.. _invoke: http://www.pyinvoke.org/
 .. _wxPython download page: http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/
 
 .. _download page:

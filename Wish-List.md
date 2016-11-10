@@ -12,6 +12,7 @@
 5. [Context-menu to open folder in OS file browser](https://github.com/robotframework/RIDE/issues/1650)
 6. Auto-detect plugins installed with "pip install", without having to copy scripts into a certain folder
 7. Restore tree-state (expanded, checkmarks) on reload-because-file-changed
+8. Add log manager tab to manage and easy view of previous run logs in tabular format.. 
 
 ## Bugs we would like fixed in RIDE
 

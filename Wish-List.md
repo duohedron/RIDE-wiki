@@ -13,6 +13,10 @@
 6. Auto-detect plugins installed with "pip install", without having to copy scripts into a certain folder
 7. Restore tree-state (expanded, checkmarks) on reload-because-file-changed
 8. Add log manager tab to manage and easy view of previous run logs in tabular format.. 
+9. Run Test (F8) button (which is after "Search Tests (F3)" at top side) should support max 4 parallel runs. 
+     * User can run 4 parallel run one after one.
+     * Live run status in run tabs like run1, run2, run3 and run4.   
+     * by this we can reduce multiple ride windows for multiple runs 
 
 ## Bugs we would like fixed in RIDE
 

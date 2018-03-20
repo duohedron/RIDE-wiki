@@ -176,3 +176,9 @@ What tags a test case has
 
 Tags are a simple and very powerful way of adding meta-data to tests. RIDE shows tags in the settings section. RIDE shows inherited tags in red (if it is a forced tag) and in gray (if it is a default tag). Tags can be edited in place.
 
+Debug a test case
+=================
+
+To set a break point add a new line above the problematic keyword use this "Comment | PAUSE"
+When the test case is started it will run normally until it hits the special Comment.
+Then you can use the Continue, Next and Step over buttons on the Run tab.

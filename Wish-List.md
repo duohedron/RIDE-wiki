@@ -37,7 +37,7 @@
      * Changing font size should refresh grid and cause row and columns sizes to be recalculated
      * Cutting, pasting, inserting, commenting one or multiple cells should cause grid to recalculate sizes
      * `Default column size` should be enforced as minimum size when manually changing the column size (except when `Auto size columns` option is checked)
-     * Word wrap will work by splitting text on multiple lines, even when text contains whitespaces
+     * Word wrap will work by splitting text on multiple lines, even when text doesn't contain whitespaces
 
 ## Bugs we would like fixed in RIDE
 

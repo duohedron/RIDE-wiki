@@ -38,7 +38,7 @@
      * Cutting, pasting, inserting and commenting one or multiple cells should cause grid to recalculate sizes of affected columns
      * `Default column size` should be enforced as minimum size when manually changing the column size (except when `Auto size columns` option is checked)
      * Rows should also have a minimum size when manually changing the row size
-     * Wrapping should be configurable to support either [Word wrap, or Word break](https://www.geeksforgeeks.org/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break-word-in-css/)
+     * Text wrapping should be configurable to support both [Word wrap and Word break](https://www.geeksforgeeks.org/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break-word-in-css/)
 
 ## Bugs we would like fixed in RIDE
 

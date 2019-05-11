@@ -18,6 +18,22 @@
      * Live run status in run tabs like run1, run2, run3 and run4.   
      * by this we can reduce multiple ride windows for multiple runs 
 
+## Grid features:
+
+1. Grid Editor Settings
+     * Default column size: Used as minimum and maximum size for all columns in grid
+     * Auto size columns:
+          * Checked - Size will be calculated based on the longest text on that that column
+          * Unchecked - Default column size will be used instead
+     * Max column size: Used to force a maximum size when `Auto size columns` option is checked
+                        Text that exceeds this size will either be wrapped or cut from view
+     * Word wrap and auto size rows:
+          * Checked - Text will be wrapped on multiple lines and row height will adapt to fit all lines
+          * Unchecked - Text will be cut from view when it exceeds `Max column size`
+                        Row height will fit only one line of text
+2. Use cases and how grid should react
+     * 
+
 ## Bugs we would like fixed in RIDE
 
 1. [Don't spew warnings when we forget to use register_run_keyword](https://github.com/robotframework/ride/issues/1661) ([PR](https://github.com/robotframework/ride/issues/1662))

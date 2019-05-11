@@ -25,14 +25,19 @@
      * Auto size columns:
           * Checked - Size will be calculated based on the longest text on that that column
           * Unchecked - Default column size will be used instead
-     * Max column size: Used to force a maximum size when `Auto size columns` option is checked
-                        Text that exceeds this size will either be wrapped or cut from view
+     * Max column size: 
+          * Used to force a maximum size when `Auto size columns` option is checked
+          * Text that exceeds this size will either be wrapped or cut from view
      * Word wrap and auto size rows:
           * Checked - Text will be wrapped on multiple lines and row height will adapt to fit all lines
-          * Unchecked - Text will be cut from view when it exceeds `Max column size`
-                        Row height will fit only one line of text
+          * Unchecked
+               * Text will be cut from view when it exceeds `Max column size`
+               * Row height will fit only one line of text
 2. Use cases and how grid should react
-     * 
+     * Changing font size should refresh grid and cause row and columns sizes to be recalculated
+     * Cutting, pasting, inserting, commenting one or multiple cells should cause grid to recalculate sizes
+     * `Default column size` should be enforced as minimum size when manually changing the column size (except when `Auto size columns` option is checked)
+     * Word wrap will work by splitting text on multiple lines, even when text contains whitespaces
 
 ## Bugs we would like fixed in RIDE
 

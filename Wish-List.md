@@ -16,7 +16,14 @@
 9. Run Test (F8) button (which is after "Search Tests (F3)" at top side) should support max 4 parallel runs. 
      * User can run 4 parallel run one after one.
      * Live run status in run tabs like run1, run2, run3 and run4.   
-     * by this we can reduce multiple ride windows for multiple runs 
+     * by this we can reduce multiple ride windows for multiple runs
+10. On Preferences:
+      * Change Font type in Grid Editor
+      * Have Color Themes (for this try to see what is the most popular ones or IDEs and try to get JSON or XML for definition)
+      * Try to start with System theme (or near, for example dark. See https://wxpython.org/Phoenix/docs/html/wx.SystemAppearance.html?highlight=theme)
+11. Remember panels/windows positions (panels can be detached, and rearranged, but always starts in default positions)
+      * Add option in Preferences to Reset to Default
+12. Make Project Tree and Files Explorer as Plugins, so they can be disabled or enabled.
 
 ## Grid features:
 

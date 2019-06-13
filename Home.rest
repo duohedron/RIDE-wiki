@@ -1,5 +1,9 @@
 RIDE is a test data editor for `Robot Framework`__ test data.
 
+**These pages have obsolete content and will change in the future.**
+
+The newest page is [[F.A.Q.]] (June 2019, RIDE v1.7.3.1)
+
   * Please read the [[Installation Instructions]] to get smoothly started.
   * [[Release Notes]] contains the list of enhancements/bug fixes per
     release.

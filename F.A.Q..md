@@ -10,8 +10,10 @@ A place to have questions and solutions.
 
    **A:** Robot Framework is tolerant to the old `: FOR` format, and the test suite can be executed correctly. However, when the file is edited in RIDE, it looses the old style formatting, so you must add the terminating `END`.
    In the next images you can see how is shown the old and new styles (the Code Editor is showing the file not formatted):
+   
    <placeholder for Old_style_Text_View.png>
    <placeholder for Old_style_Grid_Editor_View.png>
+   
    Then it must be changed to:
    <placeholder for New_style_Text_View.png>
    <placeholder for New_style_Grid_Editor_View.png>

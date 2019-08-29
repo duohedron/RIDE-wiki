@@ -19,5 +19,22 @@ A place to have questions and solutions.
    ![New FOR in Text Editor](https://robotframework.transformidea.com/RIDE/images/New_style_Text_View.png)
    ![New FOR in Grid Editor](https://robotframework.transformidea.com/RIDE/images/New_style_Grid_Editor_View.png)
 
+3. **Q:** I installed RIDE, on Python 3.7 but it does not start, see below the error. How to start RIDE?
 
+    ```
+    C:\>ride
+    Traceback (most recent call last):
+      File "C:\Program Files\Python37\Scripts\ride.py", line 21, in <module>
+        from robotide import main
+    ImportError: No module named robotide
+    ```
+
+   **A:** A possible way to start RIDE is:
+ 
+   `python -m robotide.__init__`
+
+   You can then go to `Tools>Create RIDE Desktop Shortcut`, or run the shortcut creation script with:
+ 
+   `python -m robotide.postinstall -install`
+ 
 

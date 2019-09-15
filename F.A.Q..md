@@ -37,4 +37,17 @@ A place to have questions and solutions.
  
    `python -m robotide.postinstall -install`
  
+4. **Q:** How can I preserve the _Log.html_ and _Report.html_ from different test runs, preferably with a timestamp?
 
+   **A:** You should use the `robot` option for the output directory (`-d`) in the arguments text field. See 
+[Issue #1891](https://github.com/robotframework/RIDE/issues/1891)
+
+   See below an example for Windows, using date formatting in the current test directory:
+
+   `-d ./%date:~-4,4%%date:~-10,2%%date:~-7,2%`
+
+   The similar result in Linux or MacOS can be obtained with the `date` command:
+
+   ```
+   -d `date +%F_%X`
+   ```

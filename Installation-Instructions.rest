@@ -11,27 +11,19 @@ Preconditions
 Python
 ------
 
-RIDE runs only on the regular Python_, not on Jython nor IronPython. **Python 2.6** is the minimum version. Notice that similarly as Robot Framework, RIDE does not yet support Python 3. Notice also that on OS X RIDE requires 32-bit Python version.
+RIDE runs only on the regular Python_, not on Jython nor IronPython. **Python 2.7** is the minimum version. but RIDE1.7.4 is the last version supporting Python 2.7. Pleas consider upgrading to Python 3. Notice that on OS X RIDE requires 32-bit Python version.
 
 Most other operating systems than Windows have a recent enough Python installed by default. You can find Windows installers and plenty of other information from http://python.org.
 
 wxPython
 --------
 
-RIDE's GUI is implemented using wxPython_ toolkit. Only **wxPython 2.8.12.1** with Unicode support is officially supported. Possible new releases in wxPython 2.8 series ought to work fine too. wxPython 3.0 support is one of the priorities for future development. 
+RIDE's GUI is implemented using wxPython_ toolkit.
 
-**On Windows** you can download an appropriate installer from `wxPython download page`_. For more information about the installation see http://wxpython.org pages in general.
-
-**On Linux** you should be able to install wxPython with your package manager. For example, on Debian based systems such as Ubuntu running ``sudo apt-get install python-wxgtk2.8`` ought to be enough.
-
-**On OS X** you should use wxPython binaries found from the `wxPython download page`_. wxPython2.8 only has 32 bit build available, so Python *must* be run in 32-bit mode also. This can be done globally by running:
-
-    > defaults write com.apple.versioner.python Prefer-32-Bit -bool yes
-
-or just for the RIDE execution:
-
-    > VERSIONER_PYTHON_PREFER_32_BIT=yes ride.py
-
+wxPython requires numpy, and since the latest version on numpy doesn't support Python 2.7, numpy 1.16.1 must be installed before installing RIDE.
+```
+pip install numpy==1.16.1
+```
 
 
 
@@ -58,14 +50,9 @@ Installing from source
 ----------------------
 
 * `Get the source distribution`_.
-* Extract it e.g. with WinZip on Windows or with ``tar xzvf robotframework-ride-<version>.tar.gz`` on Linux or OS X.
+* Extract it with the [File Explorer](https://support.microsoft.com/en-us/help/14200/windows-compress-uncompress-zip-files)  Windows or with ``tar xzvf robotframework-ride-<version>.tar.gz`` on Linux or OS X.
 * Go to the created directory and run ``python setup.py install``. Notice that on Linux or OS X you typically need to prefix the command with ``sudo``.
 
-Using Windows installer
------------------------
-
-* `Get Windows installer`_.
-* Double click the installer and click through the opened GUI.
 
 Using `pip` or `easy_install`
 -----------------------------
@@ -167,4 +154,3 @@ Current version of invoke_ is::
 
 .. _download page:
 .. _Get the source distribution:
-.. _Get Windows installer: https://pypi.python.org/pypi/robotframework-ride
